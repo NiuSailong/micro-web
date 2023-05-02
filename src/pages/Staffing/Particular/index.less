@@ -1,0 +1,31 @@
+.container[data-type='lookup'] {
+  :global {
+    .ant-input[disabled] {
+      color: #000c17;
+      background: white;
+      border-color: transparent;
+      cursor: auto;
+    }
+  }
+}
+.container {
+  padding: 20px 0 20px 20px;
+  :global {
+    .ant-form-item-label-left {
+      width: 85px;
+    }
+  }
+  &_row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    &_select {
+      min-width: 200px;
+    }
+  }
+  &_search {
+    width: 200px;
+    margin-left: 10px;
+  }
+}

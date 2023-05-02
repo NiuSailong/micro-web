@@ -1,0 +1,119 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    padding: 0 44px;
+    border: 1px solid #e6e6e6;
+  }
+  .title {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 0 44px;
+    .titleRight {
+      margin-left: 15px;
+      line-height: 60px;
+    }
+  }
+  .content {
+    width: 100%;
+    height: auto;
+    padding: 0 44px;
+    .lookBox {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      min-height: 200px;
+      margin-top: 20px;
+      padding: 44px 0;
+      border: 1px solid #e5e5e5;
+      border-radius: 2px;
+      .left {
+        width: 40%;
+        text-align: right;
+        p {
+          line-height: 32px;
+        }
+        p:nth-child(5) {
+          padding-top: 8px;
+        }
+      }
+      .right {
+        width: 60%;
+        margin-left: 24px;
+        text-align: left;
+        p {
+          width: 42%;
+          line-height: 32px;
+        }
+      }
+    }
+    .redactBox {
+      padding: 40px 0 20px 0;
+      border: 1px solid #e5e5e5;
+      border-radius: 2px;
+    }
+    .selects {
+      display: flex;
+      margin: 0 auto;
+      select {
+        width: 200px;
+      }
+    }
+  }
+  .btns {
+    width: 100%;
+    height: 40px;
+    margin-top: 44px;
+    text-align: center;
+    button:nth-child(1) {
+      margin-right: 16px;
+    }
+  }
+  :global {
+    .ant-select-selection__choice {
+      color: #1e7ce8;
+      background-color: #e6f7ff;
+      border: none;
+    }
+    .ant-select-remove-icon {
+      color: #1e7ce8 !important ;
+    }
+    .has-error .ant-form-explain {
+      padding-left: 16px;
+      font-size: 12px;
+    }
+    .anticon-close {
+      color: #acb1c1;
+      cursor: pointer;
+    }
+    .anticon-close :hover {
+      color: #1e7ce8;
+    }
+    .ant-select-multiple {
+      .ant-select-selection-item {
+        color: #1e7ce8;
+        background: #e6f7ff;
+        border-color: #fff;
+        border-radius: 2px;
+        user-select: none;
+      }
+      .ant-select-selection-item-remove > .anticon {
+        color: #1e7ce8 !important ;
+      }
+    }
+  }
+}
+
+.menu_button {
+  color: #1e7ce8;
+  line-height: 60px;
+  cursor: pointer;
+}

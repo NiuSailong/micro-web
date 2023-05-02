@@ -1,17 +1,17 @@
 {
   "private": true,
-  "author": "NiuSailong <niusailong@126.com>",
+  "name": "trconfigure",
   "scripts": {
     "dev": "max dev",
     "format": "prettier --cache --write .",
     "prepare": "husky install",
     "postinstall": "max setup",
     "setup": "max setup",
-    "start": "cross-env CLIENT_ENV=pre umi dev",
-    "build": "cross-env CLIENT_ENV=release umi build",
-    "buildtest": "cross-env CLIENT_ENV=test umi build",
-    "buildpre": "cross-env CLIENT_ENV=pre umi build",
-    "builddev": "cross-env CLIENT_ENV=dev umi build"
+    "start": "cross-env CLIENT_ENV=dev npm run dev",
+    "build": "cross-env CLIENT_ENV=release npm run build",
+    "buildtest": "cross-env CLIENT_ENV=test npm run build",
+    "buildpre": "cross-env CLIENT_ENV=pre npm run build",
+    "builddev": "cross-env CLIENT_ENV=dev npm run build"
   },
   "dependencies": {
     "@ant-design/icons": "^5.0.1",

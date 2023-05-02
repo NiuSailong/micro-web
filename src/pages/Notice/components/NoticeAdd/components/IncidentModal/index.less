@@ -1,0 +1,44 @@
+.modalx {
+  height: 500px;
+  :global {
+    .ant-tree .ant-tree-node-content-wrapper:hover,
+    .ant-tree .ant-tree-node-content-wrapper.ant-tree-node-selected:hover,
+    .ant-tree .ant-tree-node-content-wrapper.ant-tree-node-selected {
+      background: transparent;
+    }
+  }
+  .modaltitle {
+    margin-top: 5px;
+    color: #373e48;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .cardbox {
+    width: 100%;
+    height: calc(100% - 65px);
+    margin-top: 15px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    .container {
+      width: 100%;
+      height: 100%;
+      overflow-y: auto;
+      .treebox {
+        flex: 1.8;
+        padding: 15px;
+        padding-right: 0;
+        overflow-y: auto;
+        .checkbox {
+          width: 100%;
+          margin-top: 10px;
+          margin-left: 0;
+          label {
+            display: block;
+            margin-top: 10px;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}

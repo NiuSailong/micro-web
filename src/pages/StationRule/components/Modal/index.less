@@ -1,0 +1,72 @@
+.spn {
+  width: 30%;
+  line-height: 33px;
+}
+.tree {
+  width: 100%;
+  height: 300px;
+  margin: 0 0 15px 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #d9d9d9;
+}
+
+.coltree {
+  // border-right: 1px solid #ccc;
+  height: auto;
+  padding: 10px 10px 10px 15px;
+}
+.coltrees {
+  height: 300px;
+  padding: 10px 10px 10px 15px;
+  overflow: auto;
+  border-left: 1px solid #d9d9d9;
+}
+.del {
+  color: #8c8c8c;
+  font-size: 12px;
+  cursor: pointer;
+}
+.check {
+  color: #373e48;
+  font-size: 14px;
+}
+.stationRouleModalHeight {
+  :global {
+    .ant-modal-header {
+      border-bottom: 0;
+    }
+  }
+}
+.stationRouleSortModal {
+  height: 650px;
+  margin-bottom: 15px;
+  :global {
+    .ant-table-tbody {
+      tr:hover {
+        background: #f5f7fa !important;
+      }
+    }
+    .ant-table-body table {
+      border: none;
+    }
+    .ant-table-thead th:hover,
+    .ant-table-thead th.ant-table-column-sort:hover,
+    .ant-table-thead th.ant-table-column-sort {
+      background: #fafafa;
+    }
+
+    .ant-table-column-sort {
+      background: transparent;
+    }
+  }
+}
+
+.pspn {
+  margin-left: 13px;
+}
+.colButton {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 6px;
+}

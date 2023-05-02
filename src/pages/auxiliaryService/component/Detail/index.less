@@ -1,0 +1,44 @@
+.container {
+  box-sizing: border-box;
+  padding: 20px;
+  .title {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .listBox {
+    display: flex;
+    box-sizing: border-box;
+    width: 50%;
+    padding-top: 20px;
+    > div:first-child {
+      min-width: 200px;
+      font-weight: bold;
+    }
+  }
+  .top {
+    display: flex;
+    flex-flow: wrap;
+    width: 100%;
+  }
+  .bottomTitle {
+    width: 100%;
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 18px;
+    border-bottom: 1px solid black;
+  }
+  .tableBox {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 40px 0;
+    border-bottom: 1px solid black;
+  }
+  .spinBox {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: 300px;
+    padding-top: 50px;
+  }
+}

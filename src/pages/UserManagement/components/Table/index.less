@@ -1,0 +1,74 @@
+.tables {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-shrink: 0;
+
+  .navone {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 94px;
+    div {
+      color: #373e48;
+      font-weight: 800;
+      font-size: 18px;
+    }
+  }
+  .navTwo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 94px;
+    .userText {
+      color: #373e48;
+      font-weight: 800;
+      font-size: 18px;
+    }
+    .navright {
+      display: flex;
+      align-items: center;
+      height: 94px;
+      .batch {
+        margin-right: 16px;
+      }
+      .textNum {
+        margin-right: 16px;
+        color: #888e95;
+        font-size: 12px;
+        span {
+          margin: 0 3px;
+        }
+      }
+    }
+  }
+  .bar {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 8px;
+    background: #e6edf5;
+    border-radius: 50%;
+  }
+
+  .describe {
+    max-width: 240px;
+  }
+  .describes {
+    max-width: 140px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .operationBtn {
+    line-height: 40px;
+    text-align: center;
+  }
+}
+
+.tooltipBox {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: keep-all;
+}

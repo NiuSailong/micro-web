@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  height: 32px;
+  margin-bottom: 6px;
+
+  .ctt_left {
+    display: flex;
+    align-items: center;
+
+    &_btn {
+      width: 88px;
+      height: 100%;
+      color: #737373;
+      font-weight: 500;
+      line-height: 32px;
+      text-align: center;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    &_activeBtn {
+      color: #1e7ce8;
+      background: rgba(30, 124, 232, 0.1);
+    }
+  }
+  .ctt_right {
+    color: #1e7ce8;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,113 @@
+.unit {
+  padding-left: 16px;
+  color: #888e95;
+  font-size: 12px;
+}
+.item {
+  .vItem:nth-of-type(odd) {
+    border: 0;
+  }
+}
+.itemDiv {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e6e6e6;
+  .customPane {
+    margin-top: 20px;
+    padding: 0 20px;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+  }
+  .title {
+    color: #373e48;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  :global {
+    .ant-tabs-tabpane {
+      padding: 0 20px;
+      border: 1px solid #e6e6e6;
+      border-radius: 4px;
+    }
+    .ant-tabs-tab {
+      margin: 0;
+    }
+    .ant-tabs-tab-btn {
+      padding: 6px 16px;
+      color: #737373;
+      font-weight: 500;
+      font-size: 14px !important;
+    }
+    .ant-tabs-nav::before {
+      border: none;
+    }
+    .ant-tabs-ink-bar {
+      display: none;
+    }
+    .ant-tabs-tab-active .ant-tabs-tab-btn {
+      background: rgba(30, 124, 232, 0.1);
+      border-radius: 8px;
+    }
+    .ant-tabs-nav {
+      margin-bottom: 10px;
+    }
+  }
+}
+.itemDiv:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+.vItemDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 6px 0;
+}
+.vItem:nth-of-type(1),
+.vItem:nth-of-type(2) {
+  padding-top: 14px;
+}
+.vItem:last-child {
+  padding-bottom: 14px;
+}
+.vItem:nth-of-type(odd) {
+  border-right: 1px solid #e6e6e6;
+}
+.vItem:nth-of-type(odd) .vItemDiv {
+  margin-right: 20px;
+}
+.vItem:nth-of-type(even) .vItemDiv {
+  margin-left: 20px;
+}
+.listBox {
+  position: relative;
+  height: 200px;
+  overflow: scroll;
+  .spinLoad {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.listBox::-webkit-scrollbar {
+  display: none;
+}
+.pList {
+  width: 100%;
+  text-align: center;
+}
+.spSpace {
+  margin-right: 10px;
+}
+.leftSpan {
+  // display: inline-block;
+  // width: 100px;
+  // overflow: hidden;
+  // white-space: nowrap;
+}
+.rightSpan {
+  display: inline-block;
+  color: #4c88e3;
+}

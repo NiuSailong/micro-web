@@ -1,0 +1,138 @@
+.roleUserModal {
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8px;
+    color: #373e48;
+    font-weight: 600;
+    font-size: 18px;
+    .titleTextBox {
+      display: flex;
+      align-items: center;
+    }
+    img {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+    .close {
+      color: #acb1c1;
+      font-size: 16px;
+    }
+    .close:hover {
+      color: #2593fc;
+    }
+  }
+}
+.content {
+  display: flex;
+  width: 100%;
+  height: 328px;
+  margin-top: 20px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  .left {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 50%;
+    height: 100%;
+    padding: 16px 0 16px 16px;
+    border-right: 1px solid #d9d9d9;
+    .search {
+      padding: 0 16px 17px 0;
+      :global(.ant-input-search-icon::before) {
+        border-left: 0;
+      }
+    }
+    .msgBox {
+      margin-top: 13px;
+    }
+  }
+  .right {
+    flex: 1;
+    flex-direction: column;
+    padding: 10px 0 15px 15px;
+  }
+}
+.colrs {
+  display: flex;
+  justify-content: space-between;
+  height: 35px;
+  padding-right: 15px;
+  line-height: 40px;
+}
+.rightcontent {
+  height: 280px;
+}
+.clear {
+  width: 50px;
+  height: 36px;
+  line-height: 36px;
+  cursor: pointer;
+}
+.noData {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+  padding-right: 16px;
+}
+.list_content {
+  width: 300px;
+  height: 220px;
+  overflow: hidden;
+  &_cell {
+    height: 54px;
+  }
+  &_info {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 20px 0;
+    .phone {
+      display: flex;
+      align-items: center;
+      img {
+        width: 13px;
+      }
+    }
+  }
+}
+.email {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  padding-left: 20px;
+  overflow: hidden;
+  img {
+    width: 13px;
+  }
+  .emailText {
+    flex: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+.rightrow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .rightClose {
+    margin-right: 5px;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  height: 44px;
+  margin-top: 10px;
+  :last-child {
+    margin-left: 15px;
+  }
+}

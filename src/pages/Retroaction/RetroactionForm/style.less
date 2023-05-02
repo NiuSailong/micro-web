@@ -1,0 +1,72 @@
+@import '~@/antdDefaultLess.less';
+.container {
+  width: 100%;
+  padding: 55px;
+  &_tex {
+    display: inline-flex;
+    flex-direction: row;
+  }
+  &_form {
+    &_select_person {
+      width: calc(100% - 280px) !important;
+    }
+    &_leading {
+      display: inline;
+      margin-left: 10px;
+    }
+    &_preview {
+      margin-left: 10px;
+    }
+    &_select_menu {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      &_tag {
+        .icon_tag();
+      }
+    }
+  }
+  &_cell {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+    &_left {
+      width: 100px;
+      margin-right: 10px;
+      line-height: 20px;
+      text-align: right;
+    }
+    &_left::after {
+      padding-left: 4px;
+      content: ':';
+    }
+    &_right {
+      flex: 1;
+      line-height: 20px;
+      text-align: left;
+      &_tag {
+        .icon_tag();
+      }
+    }
+  }
+}
+
+.icon_tag {
+  height: 20px;
+  margin-top: 6px;
+  margin-left: 10px;
+  padding: 0 5px;
+  color: white;
+  line-height: 20px;
+  background: @primary-color;
+  border-radius: 4px;
+}
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 10px 0;
+}

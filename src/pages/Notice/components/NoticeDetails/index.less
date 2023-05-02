@@ -1,0 +1,213 @@
+.noticeDetails {
+  padding: 0 44px;
+  font-family: PingFang SC;
+  .cardbox {
+    min-height: calc(100vh - 200px);
+    overflow-y: auto;
+    .lookBox {
+      box-sizing: border-box;
+      padding: 28px 50px 49px;
+      border: 1px solid #e5e5e5;
+    }
+    :global {
+      .ant-tabs-card .ant-tabs-content-holder {
+        box-sizing: border-box;
+        margin-top: -16px;
+        padding: 28px 50px 49px;
+        border: 1px solid #e5e5e5;
+        border-top: 0;
+      }
+      .ant-tabs-card .ant-tabs-content-holder > .ant-tabs-tabpane {
+        background: #fff;
+      }
+      .ant-tabs-card .ant-tabs-tab {
+        width: 160px;
+        color: #afafaf;
+        text-align: center;
+        background: transparent;
+        border-color: transparent;
+        border-radius: 0;
+      }
+      .ant-tabs-card .ant-tabs-tab-active {
+        color: #373e48;
+        border: 1px solid #e5e5e5;
+        border-bottom: 1px solid #fff;
+      }
+    }
+  }
+  .goBack {
+    margin: 37px 0;
+  }
+  .tabContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 697px;
+    padding: 20px 0;
+    background: #f5f7fa;
+  }
+  .announceContent {
+    margin-top: 10px;
+    padding: 10px 5px;
+    border: 1px solid #e5e5e5;
+    border-radius: 2px;
+    .titlecol {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .time {
+        flex: 1;
+        color: #2f80ed;
+        font-size: 14px;
+        span {
+          margin-left: 5px;
+          color: #737373;
+          font-weight: normal;
+          font-size: 14px;
+        }
+      }
+    }
+    .announcetitle {
+      margin-right: 20px;
+      margin-bottom: 5px;
+      margin-left: 30px;
+      color: #373e48;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+  .previewContent {
+    display: flex;
+    p {
+      margin: 0;
+      padding: 0;
+    }
+    .left {
+      display: flex;
+      color: #dad6d6;
+      span {
+        margin: 10px;
+      }
+      .icon {
+        width: 44px;
+        height: 44px;
+        img {
+          width: 44px;
+          height: 44px;
+        }
+      }
+    }
+    .right {
+      width: 436px;
+      margin-top: 5px;
+      .link {
+        width: 32px;
+        height: 32px;
+      }
+      .titlerow {
+        display: flex;
+        flex-direction: row;
+        height: 44px;
+        .time {
+          flex: 1;
+          height: 44px;
+          color: #2f80ed;
+          font-size: 24px;
+          line-height: 34px;
+          span {
+            margin-left: 5px;
+            color: #737373;
+            font-weight: normal;
+            font-size: 14px;
+          }
+        }
+      }
+      .title {
+        margin-top: 11px;
+        color: #404040;
+        font-size: 22px;
+        line-height: 31px;
+      }
+      .detailsContent {
+        margin-top: 10px;
+        padding: 0;
+        color: #737373;
+        font-size: 14px;
+        line-height: 24px;
+        background: #f5f7fa !important;
+        border: 0;
+      }
+      textarea {
+        resize: none;
+      }
+      .imgBox {
+        display: flex;
+        width: 100%;
+        margin-top: 10px;
+        img:nth-child(1) {
+          margin-left: 0;
+        }
+        img {
+          width: auto;
+          max-width: 60px;
+          height: auto;
+          max-height: 40px;
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+  .lookContent {
+    p {
+      display: flex;
+    }
+    .title {
+      width: 98px;
+      margin-right: 10px;
+      color: #979797;
+      font-size: 14px;
+      line-height: 40px;
+      text-align: right;
+    }
+    .itemContent {
+      width: 528px;
+      max-height: 80px;
+      padding-right: 20px;
+      overflow-y: auto;
+      color: #373e48;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 40px;
+      text-align: left;
+    }
+    .lookDetailsContent {
+      margin: 0;
+      padding: 0;
+      background: #f5f7fa !important;
+      border: 0;
+    }
+    textarea {
+      resize: none;
+    }
+    .imgBox {
+      display: flex;
+      img:nth-child(1) {
+        margin-left: 0;
+      }
+      img {
+        width: auto;
+        max-width: 60px;
+        height: auto;
+        max-height: 40px;
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+.button_box {
+  margin: 20px 0;
+}

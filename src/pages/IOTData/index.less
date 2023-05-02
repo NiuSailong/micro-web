@@ -1,0 +1,399 @@
+.IOTList {
+  &_title {
+    padding: 18px 45px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  &_content {
+    padding: 0 45px;
+  }
+
+  &_screen {
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 0 20px;
+
+    &_box {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &_type {
+    padding-bottom: 22px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  &_add {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
+  }
+
+  &_reset {
+    margin-left: 10px;
+  }
+
+  &_select {
+    width: 150px;
+    margin-right: 12px;
+  }
+
+  &_operation {
+    span {
+      color: #1e7ce8;
+      cursor: pointer;
+    }
+  }
+}
+.IOTCreat {
+  :global {
+    .ant-drawer-body {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+    }
+  }
+
+  &_breadcrumb {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    padding-left: 45px !important;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  &_title {
+    display: flex;
+    align-items: center;
+  }
+
+  &_content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 10px 0 10px 45px;
+    overflow: hidden;
+    .tabsWrap {
+      position: relative;
+      display: flex;
+      flex-shrink: 0;
+      align-items: center;
+      margin-right: 45px;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #eeebeb;
+      .tabsSwitch {
+        position: absolute;
+        right: 0;
+      }
+      .tabsItem {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 42px;
+        margin-right: 27px;
+        font-size: 14px;
+        cursor: pointer;
+      }
+
+      .active {
+        position: relative;
+        height: 43px;
+        color: #1e7ce8;
+        font-weight: 600;
+        font-size: 16px;
+
+        .littleLine {
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          width: 12px;
+          height: 2px;
+          margin-left: -6px;
+          background: #1e7ce8;
+        }
+      }
+    }
+  }
+
+  &_bottom {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 0 30px;
+  }
+
+  &_basicMessage {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eeebeb;
+  }
+
+  &_itemForm {
+    width: 340px !important;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+
+  &_showModal {
+    display: flex;
+    align-items: center;
+    width: 340px;
+    height: 32px;
+    padding: 0 11px;
+    color: #1f1f1f;
+    border: 1px solid #d9d9d9;
+    cursor: pointer;
+    span {
+      color: rgba(191, 191, 191, 1);
+    }
+  }
+
+  .evenCol {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &_switch {
+    display: flex;
+    align-items: center;
+    //width: 110px;
+  }
+
+  &_annex {
+    padding-right: 45px;
+    &_title {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      font-size: 18px;
+
+      .tag {
+        color: #888e95;
+        font-size: 14px;
+      }
+
+      .upload {
+        color: #40a9ff;
+        font-size: 14px;
+        cursor: pointer;
+      }
+    }
+
+    &_search {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0 24px;
+      border-bottom: 1px solid #e6e6e6;
+
+      &_right {
+        display: flex;
+        align-items: center;
+
+        .select {
+          margin-right: 10px;
+
+          span {
+            color: #40a9ff;
+          }
+        }
+      }
+    }
+    .fileList {
+      display: flex;
+      align-items: center;
+      height: 80px;
+      padding: 0 10px;
+      border-bottom: 1px solid #e6e6e6;
+      &_checkbox {
+        margin-right: 15px;
+      }
+      &_fileName {
+        margin-left: 11px;
+        font-size: 16px;
+      }
+      &_createTime {
+        margin-left: 11px;
+        font-size: 12px;
+      }
+      &_text {
+        flex: 1;
+      }
+      &_download {
+        color: #40a9ff;
+        cursor: pointer;
+      }
+      &_annex {
+        margin-top: 40px;
+      }
+    }
+  }
+}
+.IOTFromList {
+  width: 100%;
+  .hiddenMargin {
+    :global {
+      .ant-form-item {
+        margin-bottom: 0;
+      }
+    }
+    .IOTFromList_col {
+      margin-bottom: 8px;
+    }
+  }
+  &_title {
+    display: flex;
+    width: 100%;
+    color: #888e95;
+    font-size: 14px;
+  }
+  &_row {
+    flex: 1;
+    overflow: hidden;
+  }
+  &_col {
+    box-sizing: border-box;
+    padding-right: 17px;
+  }
+  &_read {
+    display: inline-block;
+    width: 100%;
+    height: 32px;
+    overflow: hidden;
+    line-height: 32px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  &_form {
+    display: flex;
+    width: 100%;
+  }
+  &_delete {
+    width: 20px;
+    height: 100%;
+    padding-top: 8px;
+    //padding-right: 65px;
+    &_btn {
+      flex-shrink: 0;
+      color: #acb1c1;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  }
+  &_addBox {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  &_add {
+    display: flex;
+    align-items: center;
+    color: #1e7ce8;
+    font-size: 14px;
+    cursor: pointer;
+    &_icon {
+      margin-right: 10px;
+      color: #1e7ce8;
+    }
+  }
+  &_empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &_radio {
+    display: flex;
+    align-items: center;
+    width: 30px;
+    height: 32px;
+  }
+}
+.userConfirmInput {
+  width: 100%;
+  margin: 10px 0 18px 0;
+}
+.iotTemplateModal {
+  :global {
+    .ant-modal-body {
+      padding: 0 0 0 24px;
+    }
+  }
+  &_content {
+    display: flex;
+  }
+  &_left {
+    flex-shrink: 0;
+    width: 250px;
+    padding: 20px 0;
+    border-right: 1px solid #e6e6e6;
+  }
+  &_right {
+    flex: 1;
+    padding: 20px 0 20px 15px;
+    &_title {
+      margin-bottom: 13px;
+      font-size: 16px;
+    }
+  }
+  .templateOperation {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    span {
+      margin-right: 15px;
+      color: #1e7ce8;
+      cursor: pointer;
+    }
+    span:last-child {
+      margin-right: 0;
+    }
+  }
+}
+.iotMqttEdit {
+  :global {
+    .ant-modal-body {
+      padding: 0;
+    }
+    .ant-tabs-nav-wrap {
+      padding: 0 15px;
+    }
+    .ant-tabs-content {
+      height: 430px;
+      padding: 0 15px 10px;
+      overflow-y: auto;
+    }
+  }
+  .iotMqttEditForm {
+    height: 490px;
+    overflow-y: auto;
+  }
+
+  .tabTitle {
+    color: #1e7ce8;
+    font-size: 16px;
+  }
+
+  .activeAnchor {
+    .name {
+      position: relative;
+    }
+
+    a {
+      color: #1e7ce8 !important;
+      font-weight: 600;
+    }
+
+    .AnchorLine {
+      position: absolute;
+      bottom: -35px;
+      left: 50%;
+      width: 16px;
+      height: 3px;
+      margin-left: -8px;
+      background: #1e7ce8;
+    }
+  }
+}
