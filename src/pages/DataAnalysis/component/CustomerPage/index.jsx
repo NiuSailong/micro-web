@@ -12,7 +12,6 @@ import PanelTitle from '#/components/PanelTitle';
 import SearchBar from '../Search/SearchBar';
 import tAlert from '#/components/Alert';
 import { Dropdown, Button, List, message } from 'antd';
-import PropTypes from 'prop-types';
 import styles from './index.less';
 import style from '../TRTablePage/trtable.less';
 
@@ -294,10 +293,5 @@ const CoustomerPage = () => {
   );
 };
 
-ListMessage.propTypes = {
-  change: PropTypes.func,
-  data: PropTypes.array,
-  listLoading: PropTypes.bool,
-};
 
 export default CoustomerPage;

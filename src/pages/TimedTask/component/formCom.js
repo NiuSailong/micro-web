@@ -220,12 +220,3 @@ export default function FormCom({ data, onClose }) {
     </div>
   );
 }
-
-TableList.propTypes = {
-  TabData: PropType.object,
-};
-
-FormCom.propTypes = {
-  data: PropType.object,
-  onClose: PropType.func,
-};

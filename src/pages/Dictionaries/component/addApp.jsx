@@ -4,7 +4,6 @@ import FormItem from '../../common/formItem';
 import { addDictionary } from '@/services/dictionaries';
 import { HttpCode } from '#/utils/contacts';
 import tAlert from '#/components/Alert';
-import PropTypes from 'prop-types';
 import styles from '../../common/style.less';
 
 const layout = {
@@ -85,10 +84,5 @@ function Demo({ data, handleClose }) {
     </div>
   );
 }
-
-Demo.propTypes = {
-  data: PropTypes.object,
-  handleClose: PropTypes.func,
-};
 
 export default memo(Demo);

@@ -4,7 +4,6 @@ import { Modal, Form, Button, Upload, List } from 'antd';
 import TRNotification from '#/utils/notification';
 import { HttpCode } from '#/utils/contacts';
 import alert from '#/components/Alert';
-import PropTypes from 'prop-types';
 import { CloseOutlined, DownloadOutlined } from '#/utils/antdIcons';
 import planIcon from '@/assets/img/plan_icon.png';
 import { Debounce } from '#/utils/utils';
@@ -147,7 +146,7 @@ class LeadingInComponent extends Component {
         cancelText="取消"
         maskClosable={false}
         okButtonProps={{ disabled: this._onCheckDisabled(), loading: loading }}
-        visible={this.state.visible}
+        open={this.state.visible}
         onOk={this._onOk.bind(this)}
         onCancel={this._onCancel.bind(this)}
       >
@@ -208,15 +207,6 @@ class LeadingInComponent extends Component {
     );
   }
 }
-
-LeadingInComponent.propTypes = {
-  onPress: PropTypes.func,
-  exportModel: PropTypes.node,
-  downloadUrl: PropTypes.node,
-  exportUrl: PropTypes.node,
-  params: PropTypes.object,
-  moduleId: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
 
 /*
 @params

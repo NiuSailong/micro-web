@@ -6,7 +6,6 @@ import { HttpCode } from '#/utils/contacts';
 import RelationUserModal from '../../../RoleManage/components/RelationUser'; //管理用户
 import { PlusCircleOutlined, RollbackOutlined, MinusCircleOutlined } from '#/utils/antdIcons';
 import styles from './index.less';
-import PropTypes from 'prop-types';
 import _ from 'lodash';
 import Message from '#/components/Message';
 
@@ -288,8 +287,4 @@ const PositionUser = ({ type, positionList }, ref) => {
   );
 };
 
-PositionUser.propTypes = {
-  type: PropTypes.string,
-  positionList: PropTypes.array,
-};
 export default forwardRef(PositionUser);

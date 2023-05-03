@@ -9,7 +9,6 @@ import { MinusCircleOutlined, RollbackOutlined } from '#/utils/antdIcons';
 import { checkdDeleteUser } from '@/services/serviceteam';
 import { HttpCode } from '#/utils/contacts';
 import styles from '../index.less';
-import PropTypes from 'prop-types';
 
 const AddMember = (props) => {
   const { id, status, disabled, initData = [] } = props;
@@ -227,14 +226,6 @@ const AddMember = (props) => {
       )}
     </div>
   );
-};
-
-AddMember.propTypes = {
-  id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  status: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  disabled: PropTypes.node,
-  getHandleGetData: PropTypes.func,
-  initData: PropTypes.array,
 };
 
 export default connect(({ global }) => ({

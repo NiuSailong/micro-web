@@ -4,7 +4,6 @@ import { addJob } from '@/services/timedTask';
 import { HttpCode } from '#/utils/contacts';
 import CreateCron from './createCron';
 import { addArr } from './helper';
-import PropTypes from 'prop-types';
 
 const layout = {
   labelCol: {
@@ -128,6 +127,3 @@ export default function AddJob({ onClose }) {
   );
 }
 
-AddJob.propTypes = {
-  onClose: PropTypes.func,
-};

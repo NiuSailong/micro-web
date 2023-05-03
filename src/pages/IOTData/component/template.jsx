@@ -173,7 +173,7 @@ class Template extends Component {
         maskClosable={false}
         centered={true}
         closable={false}
-        visible={this.state.visible}
+        open={this.state.visible}
         wrapClassName={styles.iotTemplateModal}
         footer={[...okBtn, ...footer]}
         title={<div>模版</div>}

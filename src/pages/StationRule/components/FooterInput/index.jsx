@@ -592,14 +592,3 @@ export default class FooterInput extends Component {
     );
   }
 }
-FooterInput.propTypes = {
-  plantable: PropTypes.array,
-  selectType: PropTypes.array,
-  plan: PropTypes.string,
-  column: PropTypes.array,
-  returnData: PropTypes.func,
-  windmodal: PropTypes.node,
-  type: PropTypes.string,
-  returnRow: PropTypes.func,
-  tipData: PropTypes.node,
-};

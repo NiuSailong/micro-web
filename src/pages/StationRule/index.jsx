@@ -430,7 +430,7 @@ export default class index extends TRTablePage {
               ]}
             />
           }
-          visible={this.state.drawerVisible}
+          open={this.state.drawerVisible}
           width="90%"
           closable={true}
           onClose={() => {

@@ -4,7 +4,6 @@ import { Button, Drawer } from 'antd';
 import TRNotification from '#/utils/notification';
 import IndexComp from '../IndexComp';
 import { menuCode } from '@/pages/Canal/helper';
-import PropTypes from 'prop-types';
 
 const FieldDraw = ({ indexName }) => {
   const [visible, setVisible] = useState(true);
@@ -12,7 +11,7 @@ const FieldDraw = ({ indexName }) => {
     setVisible(false);
   };
   return (
-    <Drawer width={'90%'} visible={visible} onClose={cancel} className={styles.fieldDraw}>
+    <Drawer width={'90%'} open={visible} onClose={cancel} className={styles.fieldDraw}>
       <IndexComp menuCode={menuCode.field} indexName={indexName} />
       <div className={styles.btnBox}>
         <Button className={styles.btn} onClick={cancel}>
@@ -21,10 +20,6 @@ const FieldDraw = ({ indexName }) => {
       </div>
     </Drawer>
   );
-};
-
-FieldDraw.propTypes = {
-  indexName: PropTypes.string,
 };
 
 class CheckDrawerRef {

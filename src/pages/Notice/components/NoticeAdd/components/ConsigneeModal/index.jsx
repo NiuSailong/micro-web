@@ -6,7 +6,6 @@ import Department from './department';
 import Role from './role';
 import Consignee from '../consignee';
 import { groupUserArray } from '../helper';
-import PropTypes from 'prop-types';
 
 const { TabPane } = Tabs;
 
@@ -143,7 +142,7 @@ class ConsigneeComponent extends Component {
         centered
         className="modalWraps"
         cancelText="取消"
-        visible={this.state.visible}
+        open={this.state.visible}
         footer={[
           <Button key="dtest1" onClick={this._onCancel.bind(this)}>
             取消
@@ -175,10 +174,6 @@ class ConsigneeComponent extends Component {
     );
   }
 }
-
-ConsigneeComponent.propTypes = {
-  onPress: PropTypes.func,
-};
 
 class ConsigneeModelConfiguration {
   __key__ = '';

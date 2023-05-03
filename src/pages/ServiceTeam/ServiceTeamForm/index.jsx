@@ -16,7 +16,6 @@ import {
 import tAlert from '#/components/Alert';
 import { HttpCode } from '#/utils/contacts';
 import styles from '../index.less';
-import PropTypes from 'prop-types';
 
 const { TextArea } = Input;
 const { SHOW_PARENT } = TreeSelect;
@@ -360,13 +359,6 @@ const ServiceTeamForm = (props) => {
       </div>
     </Spin>
   );
-};
-
-ServiceTeamForm.propTypes = {
-  status: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  handleClose: PropTypes.func,
-  handleChangeStatus: PropTypes.func,
-  id: PropTypes.node,
 };
 
 export default connect(({ global }) => ({

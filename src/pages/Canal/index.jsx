@@ -1,7 +1,6 @@
 import React from 'react';
 import IndexComp from './components/IndexComp';
 import { connect } from 'dva';
-import PropTypes from 'prop-types';
 
 const Canal = ({ menuCode }) => {
   return (
@@ -9,10 +8,6 @@ const Canal = ({ menuCode }) => {
       <IndexComp menuCode={menuCode} />
     </div>
   );
-};
-
-Canal.propTypes = {
-  menuCode: PropTypes.string,
 };
 
 export default connect(({ global }) => ({

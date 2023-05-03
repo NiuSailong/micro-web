@@ -6,7 +6,6 @@ import MemberItem from './memberItem';
 import { getListAllUsers, checkUserWorkStatus } from '@/services/serviceteam';
 import { HttpCode } from '#/utils/contacts';
 import tAlert from '#/components/Alert';
-import PropTypes from 'prop-types';
 import styles from '../index.less';
 
 const { Search } = Input;
@@ -131,7 +130,7 @@ const MemberConfigComponent = (props) => {
         title="添加成员"
         width={700}
         height={480}
-        visible={visible}
+        open={visible}
         okText="提交"
         cancelText="取消"
         className="modalWraps"
@@ -242,11 +241,6 @@ const MemberConfigComponent = (props) => {
   );
 };
 
-MemberConfigComponent.propTypes = {
-  initCheckedData: PropTypes.array,
-  onPress: PropTypes.func,
-  id: PropTypes.node,
-};
 class MemberConfigModal {
   __key__ = '';
   show = (array, id) => {

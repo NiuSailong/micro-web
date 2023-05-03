@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Modal, Button, Tabs, Spin } from 'antd';
 import { useTrigger } from '../Hooks/useTrigger';
 import TRNotification from '#/utils/notification';
-import PropTypes from 'prop-types';
 import { queryOperationLogNumByAndTime } from '@/services/logAnalysis';
 import Message from '#/components/Message';
 import styles from './index.less';
@@ -91,7 +90,7 @@ const EditModalComponent = ({ data, onPress, startTime, endTime }) => {
   return (
     <Modal
       wrapClassName={trigger.wrapClassName}
-      visible={trigger.visible}
+      open={trigger.visible}
       onClose={trigger.close}
       width={800}
       centered
@@ -154,14 +153,5 @@ class EditModal {
     }
   };
 }
-EditModalComponent.propTypes = {
-  title: PropTypes.string,
-  titleSrc: PropTypes.string,
-  data: PropTypes.object,
-  onPress: PropTypes.func,
-  menuModal: PropTypes.object,
-  startTime: PropTypes.string,
-  endTime: PropTypes.string,
-};
 const RuleEditModal = new EditModal();
 export default RuleEditModal;

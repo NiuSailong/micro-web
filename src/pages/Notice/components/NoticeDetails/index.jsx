@@ -5,7 +5,6 @@ import { Row, Button, Spin } from 'antd';
 import Look from './components/look';
 import { getNoticeWebInfo } from '@/services/notice';
 import { HttpCode } from '#/utils/contacts';
-import PropTypes from 'prop-types';
 
 class NoticeDetails extends Component {
   constructor() {
@@ -58,11 +57,5 @@ class NoticeDetails extends Component {
     );
   }
 }
-
-NoticeDetails.propTypes = {
-  goBack: PropTypes.func,
-  stateList: PropTypes.array,
-  selectObj: PropTypes.object,
-};
 
 export default NoticeDetails;

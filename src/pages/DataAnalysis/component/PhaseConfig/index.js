@@ -70,7 +70,7 @@ export default function PhaseConfigDrawer(props) {
       placement="right"
       closable={false}
       onClose={onClose}
-      visible={visible}
+      open={visible}
       destroyOnClose
     >
       <Spin spinning={loading}>

@@ -13,7 +13,6 @@ import FooterInput from './FooterInput';
 import { HttpCode } from '#/utils/contacts';
 import { data1, data2 } from './helper';
 import tAlert from '#/components/Alert';
-import PropTypes from 'prop-types';
 import styles from '@/pages/common/style.less';
 import style from './style.less';
 
@@ -323,11 +322,5 @@ function Particulars({ data, handleClose, status }) {
     </div>
   );
 }
-
-Particulars.propTypes = {
-  data: PropTypes.object,
-  handleClose: PropTypes.func,
-  status: PropTypes.string,
-};
 
 export default Particulars;

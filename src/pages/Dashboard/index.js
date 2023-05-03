@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Icon, Menu, Layout } from 'antd';
-import { Link } from 'umi';
+import { Link, history } from 'umi';
 import cls from 'classnames';
 import styles from './index.less';
 import routes from '../../../config/routes';
@@ -53,9 +53,8 @@ export default class Home extends Component {
 
   getMenuItemPath = (item) => {
     const { title } = item;
-    const { location } = this.props;
     return (
-      <Link to={item.path} replace={item.path === location.pathname}>
+      <Link to={item.path} replace={item.path === history.location.pathname}>
         <span>{title}</span>
       </Link>
     );

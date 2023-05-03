@@ -5,7 +5,6 @@ import { HttpCode } from '#/utils/contacts';
 import alert from '#/components/Alert';
 import { DownloadOutlined } from '#/utils/antdIcons';
 import { AutoSizer, List as VList } from 'react-virtualized';
-import PropTypes from 'prop-types';
 import {
   getrole,
   asydetection,
@@ -388,6 +387,3 @@ export default class RoleUpdate extends Component {
     );
   }
 }
-RoleUpdate.propTypes = {
-  currentRoleId: PropTypes.number,
-};

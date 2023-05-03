@@ -6,7 +6,6 @@ import { HttpCode } from '#/utils/contacts';
 import Consignee from '../consignee';
 import { Input, Checkbox, Empty } from 'antd';
 import { CloseOutlined } from '#/utils/antdIcons';
-import PropTypes from 'prop-types';
 
 class ConsigneeBaseComponent extends Component {
   constructor(props) {
@@ -149,9 +148,5 @@ class ConsigneeBaseComponent extends Component {
     return <div />;
   }
 }
-
-ConsigneeBaseComponent.propTypes = {
-  type: PropTypes.string,
-};
 
 export default ConsigneeBaseComponent;

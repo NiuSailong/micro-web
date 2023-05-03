@@ -216,7 +216,7 @@ const Measures: React.FC = () => {
         width={'80%'}
         placement="right"
         destroyOnClose
-        visible={drawerVisible}
+        open={drawerVisible}
         onClose={drawerClose}
         className={styles.measuresContainerDrawer}
       >

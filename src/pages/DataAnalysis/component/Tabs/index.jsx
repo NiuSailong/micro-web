@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { Tabs } from 'antd';
 import { tabList } from './helper';
 import styles from './index.less';
-import PropTypes from 'prop-types';
 
 const { TabPane } = Tabs;
 
@@ -24,8 +23,3 @@ function TabsCom({ selectTabsKey, component }) {
 }
 
 export default TabsCom;
-
-TabsCom.propTypes = {
-  selectTabsKey: PropTypes.func,
-  component: PropTypes.any,
-};

@@ -162,7 +162,7 @@ export class TenantApplication extends TRTablePage {
         <Drawer
           className={styles.drawer_wrap}
           placement="right"
-          visible={drawerVisible}
+          open={drawerVisible}
           getContainer={false}
           width="90%"
           onClose={() => {

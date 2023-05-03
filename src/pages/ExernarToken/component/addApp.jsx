@@ -5,7 +5,6 @@ import { addExernarToken } from '@/services/exernarToken';
 import { HttpCode } from '#/utils/contacts';
 import tAlert from '#/components/Alert';
 import { data1 } from './helper';
-import PropTypes from 'prop-types';
 import styless from './style.less';
 
 const tailLayout = {
@@ -83,11 +82,5 @@ function Demo({ handleClose }) {
     </div>
   );
 }
-
-Demo.propTypes = {
-  data: PropTypes.object,
-  handleClose: PropTypes.func,
-  status: PropTypes.string,
-};
 
 export default memo(Demo);

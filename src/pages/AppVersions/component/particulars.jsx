@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Form, Input, Button, Row, Col } from 'antd';
 import tableKey from './helper';
-import PropTypes from 'prop-types';
 import styles from '../../common/style.less';
 
 const layout = {
@@ -51,9 +50,5 @@ function Particulars({ data, handleClose }) {
     </div>
   );
 }
-Particulars.propTypes = {
-  data: PropTypes.object,
-  handleClose: PropTypes.func,
-};
 
 export default Particulars;

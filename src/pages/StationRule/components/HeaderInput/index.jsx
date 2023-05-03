@@ -353,10 +353,3 @@ export default class HeaderInput extends Component {
     );
   }
 }
-
-HeaderInput.propTypes = {
-  type: PropTypes.string,
-  Detail: PropTypes.array,
-  callBack: PropTypes.func,
-  Mokedata: PropTypes.object,
-};

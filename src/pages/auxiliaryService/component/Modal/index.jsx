@@ -16,7 +16,7 @@ const ModalHoc = function (WarpComComponent) {
     return (
       <Modal
         wrapClassName={styles.modal_wrap}
-        visible={isModalVisible}
+        open={isModalVisible}
         maskClosable={false}
         footer={null}
         // centered

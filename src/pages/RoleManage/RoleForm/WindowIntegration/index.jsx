@@ -3,7 +3,6 @@ import styles from './index.less';
 import { Modal } from 'antd';
 import TRNotification from '#/utils/notification';
 import { CloseOutlined } from '#/utils/antdIcons';
-import PropTypes from 'prop-types';
 import RoleUpdate from './components/roleupdate';
 import planIcon from '@/assets/img/plan_icon.png';
 
@@ -82,7 +81,7 @@ class LeadingInComponent extends Component {
         className="modalWraps"
         maskClosable={false}
         okButtonProps={{ disabled: this._onCheckDisabled(), loading: loading }}
-        visible={visible}
+        open={visible}
         onOk={this._onOk.bind(this)}
         onCancel={this._onCancel.bind(this)}
       >
@@ -157,11 +156,5 @@ class LeadingInModal {
     this.__key__ = '';
   };
 }
-LeadingInComponent.propTypes = {
-  width: PropTypes.number,
-  title: PropTypes.string,
-  refname: PropTypes.string,
-  data: PropTypes.array,
-};
 const leadingInModal = new LeadingInModal();
 export default leadingInModal;

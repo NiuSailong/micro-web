@@ -86,7 +86,7 @@ const EventModal = (props) => {
       closable
       className="modalWraps"
       maskClosable={false}
-      visible={visible}
+      open={visible}
       footer={[
         <Button key="cancel" onClick={_onCancel}>
           取消

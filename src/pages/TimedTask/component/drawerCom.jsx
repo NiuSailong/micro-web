@@ -119,7 +119,3 @@ export default function DrawerCom({ data }) {
     </div>
   );
 }
-
-DrawerCom.propTypes = {
-  data: PropType.object,
-};

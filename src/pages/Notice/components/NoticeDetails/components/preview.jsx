@@ -3,7 +3,6 @@ import styles from '../index.less';
 import { Input } from 'antd';
 import moment from 'moment';
 import Zmage from 'react-zmage';
-import PropTypes from 'prop-types';
 
 const { TextArea } = Input;
 
@@ -68,9 +67,5 @@ class Preview extends Component {
     );
   }
 }
-
-Preview.propTypes = {
-  detailsData: PropTypes.object,
-};
 
 export default Preview;

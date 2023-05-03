@@ -1,7 +1,6 @@
 import React from 'react';
 import style from './index.less';
 import { Table, Empty } from 'antd';
-import PropTypes from 'prop-types';
 
 // 正序asc，倒序desc
 const sortType = { ascend: 'asc', descend: 'desc' };
@@ -50,13 +49,4 @@ class RoleTable extends React.Component {
   }
 }
 
-RoleTable.propTypes = {
-  _handelPage: PropTypes.func,
-  tableList: PropTypes.array,
-  tableMessage: PropTypes.object,
-  loading: PropTypes.bool,
-  columns: PropTypes.array,
-  _onCheckBox: PropTypes.func,
-  checkBoxValue: PropTypes.node,
-};
 export default RoleTable;

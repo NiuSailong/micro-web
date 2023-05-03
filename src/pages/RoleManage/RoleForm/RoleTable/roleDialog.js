@@ -526,7 +526,7 @@ class RoleAlertComp extends React.Component {
           onCancel={() => {
             this.onCancel();
           }}
-          visible={visible}
+          open={visible}
           centered
         >
           <div className={styles.container_modal_content}>

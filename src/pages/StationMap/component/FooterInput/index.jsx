@@ -13,12 +13,8 @@ import {
 import { getFaultList } from '@/services/stationMap';
 import Message from '#/components/Message';
 import _ from 'lodash';
-import PropTypes from 'prop-types';
-
-// import { FixedSizeList as Table } from "react-window";
 
 const { Option } = Select;
-// const OPTIONS = ['Apples', 'Nails', 'Bananas', 'Helicopters'];
 export default class FooterInput extends Component {
   state = {
     dataSource: this.props.plantable || [],
@@ -610,16 +606,3 @@ export default class FooterInput extends Component {
     );
   }
 }
-FooterInput.propTypes = {
-  plantable: PropTypes.array,
-  selectType: PropTypes.array,
-  plan: PropTypes.string,
-  column: PropTypes.array,
-  returnData: PropTypes.func,
-  windmodal: PropTypes.node,
-  type: PropTypes.string,
-  returnRow: PropTypes.func,
-  tipData: PropTypes.node,
-  perdata: PropTypes.string,
-  perselect: PropTypes.array,
-};

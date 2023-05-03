@@ -194,7 +194,7 @@ class UserComponent extends Component {
       <Modal
         centered
         closable={false}
-        visible={this.state.visible}
+        open={this.state.visible}
         onCancel={this._onClose.bind(this)}
         width={700}
         footer={null}

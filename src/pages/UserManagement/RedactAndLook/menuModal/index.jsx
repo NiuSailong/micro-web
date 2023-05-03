@@ -268,7 +268,7 @@ function MenuComponent(props) {
       wrapClassName={cls({
         [styles.modal_wrap]: true,
       })}
-      visible={state.isVisible}
+      open={state.isVisible}
       maskClosable={false}
       footer={null}
       closable={null}

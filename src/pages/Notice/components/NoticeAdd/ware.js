@@ -3,10 +3,6 @@ import styles from './index.less';
 import NoticeAdd from './index';
 import Detail from '../Detail';
 import Consignee from './components/consignee';
-import PropTypes from 'prop-types';
-import { getNoticeWebInfo } from '@/services/notice';
-import { HttpCode } from '#/utils/contacts';
-import { message } from 'antd';
 
 class Ware extends Component {
   constructor(props) {
@@ -84,9 +80,5 @@ class Ware extends Component {
     return <div className={styles.ware}>{stepComponent}</div>;
   }
 }
-
-Ware.propTypes = {
-  goBack: PropTypes.func,
-};
 
 export default Ware;

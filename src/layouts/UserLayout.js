@@ -1,5 +1,5 @@
 import React from 'react';
-import { Outlet } from 'umi'
+import { Outlet } from 'umi';
 
 const UserLayout = () => {
   return <React.Fragment>

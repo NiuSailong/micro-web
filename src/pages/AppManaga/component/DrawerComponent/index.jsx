@@ -1,5 +1,4 @@
 import { Fragment, forwardRef, useImperativeHandle, useRef } from 'react';
-import PropTypes from 'prop-types';
 import { useMount, useSetState, useUpdateEffect } from 'ahooks';
 import { getMunedata, getPowerListData } from '@/services/appManaga';
 import { Table, Input, Select, Button, Form, Divider, Drawer, Spin } from 'antd';
@@ -561,7 +560,7 @@ const DrawerComponent = ({ data, handleClose, status, statusText }, ref) => {
         destroyOnClose={true}
         className={style.drawer_wrap}
         placement="right"
-        visible={state.visibleDrawer}
+        open={state.visibleDrawer}
         width="90%"
         onClose={() => {
           handleDrawerClose();
@@ -582,7 +581,7 @@ const DrawerComponent = ({ data, handleClose, status, statusText }, ref) => {
         destroyOnClose={true}
         className={style.drawer_wrap}
         placement="right"
-        visible={state.visiblePhoto}
+        open={state.visiblePhoto}
         width="90%"
         onClose={() => {
           handlePhotoClose();
@@ -598,11 +597,4 @@ const DrawerComponent = ({ data, handleClose, status, statusText }, ref) => {
   );
 };
 
-DrawerComponent.propTypes = {
-  data: PropTypes.object,
-  handleClose: PropTypes.func,
-  status: PropTypes.string,
-  statusText: PropTypes.string,
-  tableKeys: PropTypes.array,
-};
 export default forwardRef(DrawerComponent);

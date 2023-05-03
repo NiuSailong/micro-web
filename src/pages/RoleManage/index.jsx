@@ -22,7 +22,6 @@ import tAlert from '#/components/Alert';
 import ploading from '#/components/PLoading';
 import RelationUserModal from './components/RelationUser'; //管理用户
 import scrollTo from 'antd/lib/_util/scrollTo';
-import PropTypes from 'prop-types';
 import { onCheckFeed } from '#/utils/interactive';
 
 const batchType = { relation: 1, delete: 2 };
@@ -359,7 +358,7 @@ class RoleManage extends Component {
         {/* 新建, 编辑， 查看 */}
         <Drawer
           placement="right"
-          visible={this.state.createRoleVisible}
+          open={this.state.createRoleVisible}
           width="90%"
           getContainer={false}
           className={'over_hidden_draw'}
@@ -380,7 +379,4 @@ class RoleManage extends Component {
     );
   }
 }
-RoleManage.propTypes = {
-  buttonPermissions: PropTypes.array,
-};
 export default RoleManage;

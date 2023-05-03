@@ -413,7 +413,7 @@ const BatchDynamicList = (props) => {
       placement="right"
       closable
       onClose={_hanndleClose}
-      visible={visible}
+      open={visible}
       destroyOnClose
     >
       <div className={classNames(styles.overwritePadding, styles.tableMargin)}>

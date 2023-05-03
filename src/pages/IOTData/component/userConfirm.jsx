@@ -54,7 +54,7 @@ class UserConfirm extends Component {
         maskClosable={false}
         centered={true}
         closable={false}
-        visible={this.state.visible}
+        open={this.state.visible}
         footer={[
           <Button onClick={this.handleCancel} key={'cancelBtn'}>
             取消

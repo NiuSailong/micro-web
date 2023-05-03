@@ -458,7 +458,7 @@ export default class index extends TBasePage {
           closable={false}
           onClose={this.onCloseDetails}
           getContainer={false}
-          visible={this.state.userDetailsVisible}
+          open={this.state.userDetailsVisible}
           width="90%"
           destroyOnClose={true}
         >
@@ -469,7 +469,7 @@ export default class index extends TBasePage {
           closable={false}
           getContainer={false}
           onClose={this.onCloseDetails}
-          visible={this.state.RedactAndLookDetailsVisible}
+          open={this.state.RedactAndLookDetailsVisible}
           width="90%"
           destroyOnClose={true}
         >
@@ -488,7 +488,7 @@ export default class index extends TBasePage {
         </Drawer>
         <Modal
           closable={false}
-          visible={this.state.alertvisible}
+          open={this.state.alertvisible}
           onOk={this.alertvisibleOk}
           footer={null}
           width={500}

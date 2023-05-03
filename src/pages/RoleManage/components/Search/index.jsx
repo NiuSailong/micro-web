@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import style from './index.less';
 import { Button, Select, Input, message } from 'antd';
-import PropTypes from 'prop-types';
 import HistoryShot from '../HistoryShot';
 import MyDrawer from '../MyDrawer';
 import { FileTextOutlined } from '@ant-design/icons';
@@ -134,9 +133,3 @@ export default class Header extends Component {
     );
   }
 }
-Header.propTypes = {
-  data: PropTypes.object,
-  _onReset: PropTypes.func,
-  _onSearch: PropTypes.func,
-  buttonPermissions: PropTypes.array,
-};

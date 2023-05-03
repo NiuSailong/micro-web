@@ -86,7 +86,7 @@ const IotLog = (props) => {
   return (
     <Modal
       title="日志"
-      visible={state.visible}
+      open={state.visible}
       onCancel={onCancel}
       onOk={onOk}
       centered={true}

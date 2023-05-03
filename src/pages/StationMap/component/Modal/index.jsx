@@ -4,7 +4,6 @@ import Message from '#/components/Message';
 import { SearchOutlined } from '#/utils/antdIcons';
 import { Modal, Button, Table, Input, Row, Col, Empty } from 'antd';
 import TRNotification from '#/utils/notification';
-import PropTypes from 'prop-types';
 
 class ModelAlert extends Component {
   state = {
@@ -171,7 +170,7 @@ class ModelAlert extends Component {
         title={<h3 style={{ marginTop: '15px' }}>{this.props.listTitle.title}</h3>}
         width={900}
         centered={true}
-        visible={this.state.visible}
+        open={this.state.visible}
         onOk={this.handleOk}
         maskClosable={true}
         className={styles.stationRouleModalHeight}
@@ -276,15 +275,6 @@ class ModelAlert extends Component {
     );
   }
 }
-
-ModelAlert.propTypes = {
-  serverType: PropTypes.func,
-  listTitle: PropTypes.object,
-  columns: PropTypes.func,
-  Open: PropTypes.func,
-  dataSource: PropTypes.object,
-  duplicate: PropTypes.array,
-};
 
 class TableModal {
   __key__ = '';

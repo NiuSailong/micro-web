@@ -3,7 +3,6 @@ import styles from '../../NoticeDetails/index.less';
 import { Input } from 'antd';
 import Zmage from 'react-zmage';
 import { getSiteType, getRecipient, getAnnounce, getDept, getDevice } from './helper';
-import PropTypes from 'prop-types';
 
 const { TextArea } = Input;
 
@@ -105,10 +104,5 @@ class Look extends Component {
     );
   }
 }
-Look.propTypes = {
-  tempObj: PropTypes.object,
-  stateList: PropTypes.array,
-  currentUser: PropTypes.object,
-};
 
 export default Look;

@@ -69,7 +69,7 @@ export default function ImplementModel() {
       <Button onClick={showModal}>手动执行</Button>
       <Modal
         title="手动执行"
-        visible={isModalVisible}
+        open={isModalVisible}
         onOk={handleOk}
         onCancel={handleCancel}
         okButtonProps={{ loading: butLoading }}

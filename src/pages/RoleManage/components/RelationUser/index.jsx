@@ -7,7 +7,6 @@ import TRNotification from '#/utils/notification';
 import { AlertResult } from '#/utils/contacts';
 import { CloseOutlined } from '#/utils/antdIcons';
 import _ from 'lodash';
-import PropTypes from 'prop-types';
 import { HttpCode } from '#/utils/contacts';
 import { relationUserList } from '@/services/roleManage';
 import { getRelationSelectList } from '../../helper';
@@ -276,7 +275,7 @@ class RelationUser extends Component {
       <Modal
         centered
         closable={false}
-        visible={this.state.visible}
+        open={this.state.visible}
         onCancel={this._onClose}
         width={780}
         maskClosable={false}
@@ -371,13 +370,6 @@ class RelationUser extends Component {
     );
   }
 }
-RelationUser.propTypes = {
-  roleIds: PropTypes.array,
-  isObject: PropTypes.bool,
-  buttonPermissions: PropTypes.array,
-  _onFn: PropTypes.func,
-  isUserIds: PropTypes.bool,
-};
 
 class RelationUserModal {
   __key__ = '';

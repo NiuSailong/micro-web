@@ -1,12 +1,11 @@
 import React, { memo, useEffect, useState } from 'react';
 import { Form, Button, message, Space } from 'antd';
-import FormItem from '../../common/formItem';
-import { addAppVersions, updateAppVersions } from '../../../services/appVersions';
+import FormItem from '@/pages/common/formItem';
+import { addAppVersions, updateAppVersions } from '@/services/appVersions';
 import { HttpCode } from '#/utils/contacts';
 import tAlert from '#/components/Alert';
 import tableKey from './helper';
-import PropTypes from 'prop-types';
-import styles from '../../common/style.less';
+import styles from '@/pages/common/style.less';
 
 const layout = {
   labelCol: {
@@ -88,9 +87,4 @@ function Demo({ data, handleClose, status }) {
   );
 }
 
-Demo.propTypes = {
-  data: PropTypes.object,
-  handleClose: PropTypes.func,
-  status: PropTypes.string,
-};
 export default memo(Demo);

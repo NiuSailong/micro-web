@@ -14,13 +14,6 @@ export default {
       });
       successCallback && successCallback();
     },
-    *onSaveGlobalMenuCode({ payload }, { put, select }) {
-      const { configure } = yield select((_) => _.global);
-      yield put({
-        type: 'onSaveData',
-        payload: { ...configure, ...payload },
-      });
-    },
   },
   reducers: {
     onSaveData(state, { payload }) {

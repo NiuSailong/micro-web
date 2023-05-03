@@ -217,7 +217,7 @@ export default class index extends TRTablePage {
       <>
         <Drawer
           placement="right"
-          visible={drawerVisible}
+          open={drawerVisible}
           getContainer={false}
           width="90%"
           onClose={() => {

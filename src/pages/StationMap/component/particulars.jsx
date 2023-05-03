@@ -20,7 +20,6 @@ import moment from 'moment';
 import tAlert from '#/components/Alert';
 import Message from '#/components/Message';
 import _ from 'lodash';
-import PropTypes from 'prop-types';
 import styles from '@/pages/common/style.less';
 
 const layout = {
@@ -416,11 +415,5 @@ function Particulars({ data, handleClose, status }) {
     </Spin>
   );
 }
-
-Particulars.propTypes = {
-  data: PropTypes.object,
-  handleClose: PropTypes.func,
-  status: PropTypes.string,
-};
 
 export default Particulars;

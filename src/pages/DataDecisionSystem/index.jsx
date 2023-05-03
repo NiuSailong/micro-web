@@ -126,7 +126,7 @@ function FanRuanTable({ buttonPermissions = [], menuCode = 'DataDecisionSystem' 
     return (
       <Modal
         title={id ? '编辑' : '新增'}
-        visible={visible}
+        open={visible}
         confirmLoading={confirmLoading}
         footer={null}
         closable={false}

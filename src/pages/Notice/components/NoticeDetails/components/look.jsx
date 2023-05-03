@@ -3,7 +3,6 @@ import styles from '../index.less';
 import moment from 'moment';
 import { Input } from 'antd';
 import Zmage from 'react-zmage';
-import PropTypes from 'prop-types';
 
 const { TextArea } = Input;
 
@@ -111,7 +110,4 @@ class Look extends Component {
     );
   }
 }
-Look.propTypes = {
-  detailsData: PropTypes.object,
-};
 export default Look;

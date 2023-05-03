@@ -5,7 +5,6 @@ import { addSystemVersion, UpdateDeptMapper } from '@/services/stationMap';
 import { HttpCode } from '#/utils/contacts';
 import tAlert from '#/components/Alert';
 import tableKey from './data';
-import PropTypes from 'prop-types';
 import styless from './style.less';
 
 const tailLayout = {
@@ -94,11 +93,5 @@ function Demo({ data, handleClose, status }) {
     </div>
   );
 }
-
-Demo.propTypes = {
-  data: PropTypes.object,
-  handleClose: PropTypes.func,
-  status: PropTypes.string,
-};
 
 export default memo(Demo);

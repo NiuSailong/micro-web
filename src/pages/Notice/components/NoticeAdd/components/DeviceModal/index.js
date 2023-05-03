@@ -6,7 +6,6 @@ import { getDeviceSite, getDevice } from '@/services/notice';
 import { HttpCode } from '#/utils/contacts';
 import { CloseOutlined } from '#/utils/antdIcons';
 import _ from 'lodash';
-import PropTypes from 'prop-types';
 import cls from 'classnames';
 
 class DeviceComponent extends Component {
@@ -207,7 +206,7 @@ class DeviceComponent extends Component {
         centered
         cancelText="取消"
         className="modalWraps"
-        visible={this.state.visible}
+        open={this.state.visible}
         footer={[
           <Button key="dtest1" onClick={this._onCancel.bind(this)}>
             取消
@@ -319,12 +318,6 @@ class DeviceComponent extends Component {
     );
   }
 }
-
-DeviceComponent.propTypes = {
-  deptObj: PropTypes.object,
-  onPress: PropTypes.func,
-  defaultArr: PropTypes.array,
-};
 
 class DeviceModel {
   __key__ = '';

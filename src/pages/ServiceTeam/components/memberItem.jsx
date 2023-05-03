@@ -2,7 +2,6 @@ import React from 'react';
 import { Checkbox } from 'antd';
 import { CloseOutlined } from '#/utils/antdIcons';
 import styles from '../index.less';
-import PropTypes from 'prop-types';
 
 function areEqual(prevProps, nextProps) {
   return prevProps.checked === nextProps.checed;
@@ -45,12 +44,5 @@ const ItemMember = React.memo((props) => {
     </div>
   );
 }, areEqual);
-
-ItemMember.propTypes = {
-  status: PropTypes.bool,
-  item: PropTypes.object,
-  checked: PropTypes.bool,
-  onCheckedChange: PropTypes.func,
-};
 
 export default ItemMember;

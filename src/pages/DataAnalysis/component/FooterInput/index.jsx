@@ -9,7 +9,6 @@ import {
   QuestionCircleOutlined,
 } from '#/utils/antdIcons';
 import Message from '#/components/Message';
-import PropTypes from 'prop-types';
 import Expan from './expandable';
 import _ from 'lodash';
 import style from './index.less';
@@ -385,7 +384,7 @@ export default class FooterInput extends Component {
         ) : null}
         {showRes ? (
           <Expan
-            visible={showRes}
+            open={showRes}
             hidBtn={hideBtn}
             data={expn}
             addAirId={addAirId}
@@ -399,17 +398,3 @@ export default class FooterInput extends Component {
     );
   }
 }
-FooterInput.propTypes = {
-  plantable: PropTypes.array,
-  selectType: PropTypes.array,
-  plan: PropTypes.string,
-  column: PropTypes.array,
-  windmodal: PropTypes.node,
-  type: PropTypes.string,
-  returnRow: PropTypes.func,
-  tipData: PropTypes.node,
-  perdata: PropTypes.string,
-  addAirId: PropTypes.number || PropTypes.string,
-  getData: PropTypes.func,
-  dataNames: PropTypes.string,
-};

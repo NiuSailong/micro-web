@@ -29,7 +29,7 @@ const DrawerComponent = ({ title, iconType, onPress, MyComponent, width = 1400 }
       title={_title()}
       width={width}
       onClose={_onCloseDrawer}
-      visible={visible}
+      open={visible}
     >
       {<MyComponent save={_onSave} />}
     </Drawer>

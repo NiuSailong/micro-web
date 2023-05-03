@@ -125,7 +125,7 @@ function CreatComp(props) {
     }
   };
   return (
-    <Drawer visible={visible} width={'90%'} onClose={onCancel} className={styles.IOTCreat}>
+    <Drawer open={visible} width={'90%'} onClose={onCancel} className={styles.IOTCreat}>
       <Breadcrumb className={styles.IOTCreat_breadcrumb}>
         <Breadcrumb.Item>数据接入配置</Breadcrumb.Item>
         <Breadcrumb.Item>{PAGE_TYPE_DESC[pageState]}</Breadcrumb.Item>

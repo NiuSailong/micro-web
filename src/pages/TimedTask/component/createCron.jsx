@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Button, Modal } from 'antd';
 import QnnReactCron from 'qnn-react-cron';
-import PropTypes from 'prop-types';
 
 export const CronChange = ({ label, onCreate }) => {
   let cronFns;
@@ -55,7 +54,7 @@ export default function CreateCron({ visible, onCreate, onCancel, cronData, stat
     <Modal
       width="550px"
       title={status}
-      visible={visible}
+      open={visible}
       onOk={() => onCreate()}
       onCancel={onCancel}
       footer={false}
@@ -64,16 +63,3 @@ export default function CreateCron({ visible, onCreate, onCancel, cronData, stat
     </Modal>
   );
 }
-
-CronChange.propTypes = {
-  label: PropTypes.any,
-  onCreate: PropTypes.func,
-};
-
-CreateCron.propTypes = {
-  visible: PropTypes.bool,
-  onCreate: PropTypes.func,
-  onCancel: PropTypes.func,
-  cronData: PropTypes.any,
-  status: PropTypes.string,
-};

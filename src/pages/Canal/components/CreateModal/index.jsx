@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import TRNotification from '#/utils/notification';
 import { Button, Modal, Form, Input, Select } from 'antd';
 import { AlertResult } from '#/utils/contacts';
-import PropTypes from 'prop-types';
 import styles from './index.less';
 
 const { Option } = Select;
@@ -61,7 +60,7 @@ class CreateModal extends Component {
         maskClosable={false}
         centered={true}
         closable={false}
-        visible={visible}
+        open={visible}
         className={`modalWraps`}
         footer={[
           <Button key={'cancelBtn'} onClick={this.handleCancel}>
@@ -126,13 +125,6 @@ class CreateModal extends Component {
     );
   }
 }
-
-CreateModal.propTypes = {
-  onPress: PropTypes.func,
-  title: PropTypes.string,
-  list: PropTypes.array,
-  editData: PropTypes.object,
-};
 
 class CreateModalRef {
   __key__ = '';

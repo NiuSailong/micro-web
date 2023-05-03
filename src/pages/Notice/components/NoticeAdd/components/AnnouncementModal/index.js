@@ -26,7 +26,6 @@ import { SearchOutlined } from '#/utils/antdIcons';
 import 'moment/locale/zh-cn';
 import locale from 'antd/es/date-picker/locale/zh_CN';
 
-import PropTypes from 'prop-types';
 
 const dateFormat1 = 'YYYY.MM.DD';
 const PAGESIZE = 10;
@@ -222,7 +221,7 @@ class AnnouncementComponent extends Component {
         width={1100}
         centered
         cancelText="取消"
-        visible={this.state.visible}
+        open={this.state.visible}
         footer={[
           <Button key="ttest1" onClick={this._onCancel.bind(this)}>
             取消
@@ -336,12 +335,6 @@ class AnnouncementComponent extends Component {
     );
   }
 }
-
-AnnouncementComponent.propTypes = {
-  stateList: PropTypes.array,
-  onPress: PropTypes.func,
-};
-
 class AnnouncementModel {
   __key__ = '';
 

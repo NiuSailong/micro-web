@@ -160,7 +160,7 @@ export default class AppManaga extends TRTablePage {
         <Drawer
           className={styles.drawer_wrap}
           placement="right"
-          visible={drawerVisible}
+          open={drawerVisible}
           getContainer={false}
           width="90%"
           onClose={() => {
@@ -190,7 +190,7 @@ export default class AppManaga extends TRTablePage {
         <Drawer
           className={styles.drawer_wrap}
           placement="right"
-          visible={visible}
+          open={visible}
           getContainer={false}
           width="90%"
           onClose={() => {

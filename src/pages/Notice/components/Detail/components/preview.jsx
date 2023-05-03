@@ -3,10 +3,7 @@ import styles from '../../NoticeDetails/index.less';
 import { Input } from 'antd';
 import moment from 'moment';
 import Zmage from 'react-zmage';
-import PropTypes from 'prop-types';
-
 const { TextArea } = Input;
-
 import icon_plan from '@/assets/img/notice/icon_plan.png';
 import icon_unplan from '@/assets/img/notice/icon_unplan.png';
 import icon_sysup from '@/assets/img/notice/icon_sysup.png';
@@ -94,9 +91,5 @@ class Preview extends Component {
     );
   }
 }
-
-Preview.propTypes = {
-  tempObj: PropTypes.object,
-};
 
 export default Preview;

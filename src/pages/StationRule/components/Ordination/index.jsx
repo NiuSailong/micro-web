@@ -1563,12 +1563,3 @@ export default class index extends Component {
     );
   }
 }
-index.propTypes = {
-  type: PropTypes.string,
-  viewDetail: PropTypes.object,
-  Editchange: PropTypes.func,
-  _onHandleClose: PropTypes.func,
-  _checkedPage: PropTypes.func,
-  saveButton: PropTypes.object,
-  otherParam: PropTypes.object,
-};

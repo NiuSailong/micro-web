@@ -133,7 +133,7 @@ class SelectMeasuresModal extends Component {
         <Modal
           width={1000}
           centered={true}
-          visible={visible}
+          open={visible}
           title={'关联'}
           onCancel={this.handleCancel}
           footer={[

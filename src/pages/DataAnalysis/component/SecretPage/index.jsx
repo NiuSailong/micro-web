@@ -180,7 +180,7 @@ export class SecretPage extends TRTablePage {
       <>
         <Drawer
           placement="right"
-          visible={drawerVisible}
+          open={drawerVisible}
           getContainer={false}
           width="90%"
           onClose={() => {

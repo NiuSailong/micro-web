@@ -10,7 +10,6 @@ import {
   message,
   Select,
 } from 'antd';
-import PropTypes from 'prop-types';
 import _ from 'lodash';
 import { HttpCode } from '#/utils/contacts';
 
@@ -287,12 +286,6 @@ const EditableConfigTable = (props, ref) => {
       </Form>
     </div>
   );
-};
-
-EditableConfigTable.prototype = {
-  propColumns: PropTypes.array,
-  originData: PropTypes.array,
-  setTableOptions: PropTypes.func,
 };
 
 export default forwardRef(EditableConfigTable);

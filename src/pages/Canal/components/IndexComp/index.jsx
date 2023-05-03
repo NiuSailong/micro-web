@@ -9,7 +9,6 @@ import PanelTitle from '#/components/PanelTitle';
 import Alert from '#/components/Alert';
 import CreatModal from '../CreateModal';
 import FieldDraw from '../FieldDraw';
-import PropTypes from 'prop-types';
 
 const IndexComp = ({ menuCode, indexName = '' }) => {
   const [list, setList] = useState([]);
@@ -119,11 +118,6 @@ const IndexComp = ({ menuCode, indexName = '' }) => {
       </Spin>
     </div>
   );
-};
-
-IndexComp.propTypes = {
-  menuCode: PropTypes.string,
-  indexName: PropTypes.string,
 };
 
 export default IndexComp;

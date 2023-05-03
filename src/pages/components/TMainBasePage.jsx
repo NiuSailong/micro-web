@@ -303,11 +303,6 @@ export const EmptyRender = ({ isBorder = true, message = '', isDack = false }) =
   }
   return <Empty isBorder={isBorder} isDack={isDack} {...obj} description={message} />;
 };
-EmptyRender.propTypes = {
-  isBorder: PropTypes.bool,
-  isDack: PropTypes.bool,
-  message: PropTypes.string,
-};
 
 export const ErrorRender = ({ message, isBorder = true, isDack = false }) => {
   let obj = {};
@@ -317,14 +312,4 @@ export const ErrorRender = ({ message, isBorder = true, isDack = false }) => {
   return (
     <Empty isBorder={isBorder} icon={error_img} isDack={isDack} {...obj} description={message} />
   );
-};
-LoadingRender.propTypes = {
-  isBorder: PropTypes.bool,
-  isDack: PropTypes.bool,
-};
-
-ErrorRender.propTypes = {
-  message: PropTypes.string,
-  isBorder: PropTypes.bool,
-  isDack: PropTypes.bool,
 };

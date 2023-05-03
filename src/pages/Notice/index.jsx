@@ -429,7 +429,7 @@ class BasicTable extends React.Component {
           maskClosable={false}
           zIndex={200}
           onClose={this._onCloseDrawer.bind(this)}
-          visible={this.state.drawerVisible}
+          open={this.state.drawerVisible}
           width="95%"
           destroyOnClose={true}
         >
@@ -449,7 +449,7 @@ class BasicTable extends React.Component {
           closable={false}
           maskClosable={false}
           onClose={this._onCloseDetails.bind(this)}
-          visible={this.state.detailsVisible}
+          open={this.state.detailsVisible}
           width="95%"
           destroyOnClose={true}
         >

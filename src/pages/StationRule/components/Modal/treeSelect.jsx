@@ -137,7 +137,7 @@ class ModelTree extends Component {
         title={type}
         width={500}
         centered={true}
-        visible={this.state.visible}
+        open={this.state.visible}
         onOk={this.handleOk}
         maskClosable={true}
         destroyOnClose={true}

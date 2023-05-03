@@ -171,7 +171,7 @@ class ModelAlert extends Component {
         title={<h3 style={{ marginTop: '15px' }}>{this.props.listTitle.title}</h3>}
         width={900}
         centered={true}
-        visible={this.state.visible}
+        open={this.state.visible}
         onOk={this.handleOk}
         maskClosable={true}
         className={styles.stationRouleModalHeight}

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Row, Col, Select, Input, Button } from 'antd';
-import PropTypes from 'prop-types';
 import searchBar from './searchBar.less';
 
 const SearchBar = (props) => {
@@ -77,23 +76,4 @@ const SearchBar = (props) => {
   );
 };
 
-SearchBar.defaultProps = {
-  option: [],
-  defaultOption: {},
-  selectKeyId: 'value',
-  selectSelectKey: 'dictionaryValue',
-  selectKeyVal: 'description',
-  inputKeyVal: 'keyWord',
-  onChangeFC: () => {},
-};
-
-SearchBar.propTypes = {
-  option: PropTypes.array,
-  defaultOption: PropTypes.object,
-  selectKeyId: PropTypes.string,
-  selectKeyVal: PropTypes.string,
-  selectSelectKey: PropTypes.string,
-  inputKeyVal: PropTypes.string,
-  onChangeFC: PropTypes.func,
-};
 export default SearchBar;

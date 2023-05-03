@@ -189,7 +189,7 @@ export class TimeTask extends TRTablePage {
             onClose={() => this._onHandleClose(true)}
             destroyOnClose={true}
             title={<DrawerHeader menuList={['后台管理', '定时任务', statusText]} />}
-            visible={drawerVisible}
+            open={drawerVisible}
             bodyStyle={{ padding: 20 }}
           >
             {status === 'lookup' ? (

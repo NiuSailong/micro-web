@@ -3,7 +3,6 @@ import styles from './index.less';
 import { CloseOutlined } from '#/utils/antdIcons';
 import { Modal, Input, Row, Col, Checkbox, Select } from 'antd';
 import TRNotification from '#/utils/notification';
-import PropTypes from 'prop-types';
 
 const { Option } = Select;
 
@@ -138,7 +137,7 @@ class ModelTree extends Component {
         title={type}
         width={500}
         centered={true}
-        visible={this.state.visible}
+        open={this.state.visible}
         onOk={this.handleOk}
         maskClosable={true}
         destroyOnClose={true}
@@ -242,12 +241,6 @@ class ModelTree extends Component {
     );
   }
 }
-
-ModelTree.propTypes = {
-  title: PropTypes.array,
-  Open: PropTypes.func,
-  type: PropTypes.string,
-};
 
 class TreeModal {
   __keys__ = '';

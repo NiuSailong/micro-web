@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
 import { Button } from 'antd';
 import Message from '#/components/Message';
 import styles from './index.less';
@@ -85,16 +84,4 @@ function TRButton({
     </>
   );
 }
-TRButton.propTypes = {
-  children: PropTypes.any,
-  buttonPermissions: PropTypes.any,
-  menuCode: PropTypes.any,
-  onClick: PropTypes.any,
-  type: PropTypes.any,
-  className: PropTypes.any,
-  style: PropTypes.any,
-  disabled: PropTypes.any,
-  loading: PropTypes.any,
-  darkStyle: PropTypes.any,
-};
 export default TRButton;

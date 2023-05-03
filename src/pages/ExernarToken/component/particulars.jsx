@@ -6,7 +6,6 @@ import { HttpCode } from '#/utils/contacts';
 import { data1 } from './helper';
 import { setExernarToken, resetToken, resetstok } from '@/services/exernarToken';
 import tAlert from '#/components/Alert';
-import PropTypes from 'prop-types';
 import styles from './style.less';
 
 const layout = {
@@ -196,7 +195,7 @@ function Particulars({ data, handleClose, status, resetData }) {
             重置
           </Button>
         </div>
-        <Modal title="Basic Modal" visible={isModalVisible} onCancel={handleCancel} footer={null}>
+        <Modal title="Basic Modal" open={isModalVisible} onCancel={handleCancel} footer={null}>
           <p>重置中，重置还需要一些时间，大约需要30秒</p>
           <p>{timer >= 1 ? `${timer}秒` : '重置完成'}</p>
         </Modal>
@@ -204,12 +203,5 @@ function Particulars({ data, handleClose, status, resetData }) {
     </Spin>
   );
 }
-
-Particulars.propTypes = {
-  data: PropTypes.object,
-  handleClose: PropTypes.func,
-  status: PropTypes.string,
-  resetData: PropTypes.object,
-};
 
 export default Particulars;

@@ -2,12 +2,9 @@ import React, { Component } from 'react';
 import { Modal, Button, Spin, Tree, Empty } from 'antd';
 import styles from './index.less';
 import TRNotification from '#/utils/notification';
-
 import { queryDataPower } from '@/services/user';
 import { powersDataType } from '#/utils/userHelper';
-
 import { HttpCode } from '#/utils/contacts';
-import PropTypes from 'prop-types';
 
 class IncidentComponent extends Component {
   static defaultProps = {
@@ -127,7 +124,7 @@ class IncidentComponent extends Component {
         width={500}
         centered
         cancelText="取消"
-        visible={this.state.visible}
+        open={this.state.visible}
         className="modalWraps"
         footer={[
           <Button key="test1" onClick={this._onCancel.bind(this)}>
@@ -176,12 +173,6 @@ class IncidentComponent extends Component {
     );
   }
 }
-
-IncidentComponent.propTypes = {
-  onPress: PropTypes.func,
-  selectObj: PropTypes.object,
-  expandArray: PropTypes.array,
-};
 
 class IncidentModal {
   __key__ = '';

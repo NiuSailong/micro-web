@@ -7,7 +7,6 @@ import {
   PlusCircleOutlined,
   QuestionCircleOutlined,
 } from '#/utils/antdIcons';
-import PropTypes from 'prop-types';
 import moment from 'moment';
 import _ from 'lodash';
 import styler from './FooterInput/Finput.less';
@@ -332,13 +331,3 @@ export default class FooterInput extends Component {
     );
   }
 }
-FooterInput.propTypes = {
-  plantable: PropTypes.array,
-  selectType: PropTypes.array,
-  plan: PropTypes.string,
-  column: PropTypes.array,
-  type: PropTypes.string,
-  chang: PropTypes.func,
-  planId: PropTypes.number,
-  selectOptions: PropTypes.array,
-};

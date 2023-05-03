@@ -11,7 +11,6 @@ import {
   CaretRightOutlined,
 } from '#/utils/antdIcons';
 import Message from '#/components/Message';
-import PropTypes from 'prop-types';
 import _ from 'lodash';
 import { TYPE_LIST } from './helper.js';
 
@@ -667,22 +666,3 @@ export default class FooterInput extends Component {
     );
   }
 }
-FooterInput.propTypes = {
-  plantable: PropTypes.array,
-  selectType: PropTypes.array,
-  plan: PropTypes.string,
-  column: PropTypes.array,
-  windmodal: PropTypes.node,
-  type: PropTypes.string,
-  returnRow: PropTypes.func,
-  tipData: PropTypes.node,
-  perdata: PropTypes.string,
-  perselect: PropTypes.array,
-  menuCodeRele: PropTypes.func,
-  menuCodeS: PropTypes.array,
-  showSub: PropTypes.func,
-  SubText: PropTypes.bool,
-  code: PropTypes.string,
-  lookup: PropTypes.string,
-  powerList: PropTypes.array,
-};

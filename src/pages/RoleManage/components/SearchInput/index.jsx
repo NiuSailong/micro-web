@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Input } from 'antd';
-import PropTypes from 'prop-types';
 
 export default class SearchInput extends Component {
   constructor(props) {
@@ -25,7 +24,3 @@ export default class SearchInput extends Component {
     );
   }
 }
-
-SearchInput.propTypes = {
-  search: PropTypes.func,
-};

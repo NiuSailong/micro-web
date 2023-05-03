@@ -4,8 +4,6 @@ import { Button, Menu, Dropdown, Table, Empty } from 'antd';
 import { BtnList } from '../../helper';
 import { connect } from 'dva';
 
-import PropTypes from 'prop-types';
-
 @connect(({ global }) => ({
   buttonPermissions: global?.configure?.buttonPermissions || [],
 }))
@@ -142,16 +140,3 @@ export default class index extends Component {
     );
   }
 }
-
-index.propTypes = {
-  buttonPermissions: PropTypes.array,
-  handelPage: PropTypes.func,
-  loading: PropTypes.bool,
-  onCheckBox: PropTypes.func,
-  columns: PropTypes.array,
-  checkBoxValue: PropTypes.node,
-  tableMessage: PropTypes.object,
-  userInfoBodyList: PropTypes.object,
-  onOpenAddUser: PropTypes.func,
-  batchbtn: PropTypes.func,
-};

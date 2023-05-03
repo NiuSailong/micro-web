@@ -4,7 +4,6 @@ import TRNotification from '#/utils/notification';
 import styles from './index.less';
 import { AlertResult } from '#/utils/contacts';
 import { InfoCircleOutlined } from '#/utils/antdIcons';
-import PropTypes from 'prop-types';
 
 class AlertModalComponent extends Component {
   constructor(props) {
@@ -24,7 +23,7 @@ class AlertModalComponent extends Component {
         maskClosable={false}
         centered={true}
         closable={false}
-        visible={this.state.visible}
+        open={this.state.visible}
         okButtonProps={{ disabled: !this.state.value }}
         onOk={() => {
           this.props._onFn(AlertResult.SUCCESS, this.state.value);
@@ -52,11 +51,6 @@ class AlertModalComponent extends Component {
     );
   }
 }
-AlertModalComponent.propTypes = {
-  inputDefaultValue: PropTypes.node,
-  _onFn: PropTypes.func,
-  title: PropTypes.string,
-};
 const msgConent = function (msg) {
   return <div>{msg}</div>;
 };

@@ -233,7 +233,7 @@ class PopupSettleComponent extends TBasePage {
         className="modalWraps"
         closable={false}
         maskClosable={false}
-        visible={this.state.visible}
+        open={this.state.visible}
         footer={[
           <Button key="dtest1" onClick={this._onCancel.bind(this)}>
             取消

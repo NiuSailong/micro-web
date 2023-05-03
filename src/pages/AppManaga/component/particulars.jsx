@@ -15,7 +15,6 @@ import {
 } from '@/services/appManaga';
 import tAlert from '#/components/Alert';
 import Message from '#/components/Message';
-import PropTypes from 'prop-types';
 import styles from '@/pages/common/style.less';
 import style from './style.less';
 
@@ -462,11 +461,5 @@ function Particulars({ data, handleClose, status }) {
     </div>
   );
 }
-
-Particulars.propTypes = {
-  data: PropTypes.object,
-  handleClose: PropTypes.func,
-  status: PropTypes.string,
-};
 
 export default Particulars;

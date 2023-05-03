@@ -1,6 +1,5 @@
 import React, { useEffect, useState, memo } from 'react';
 import { Modal, Form, Input } from 'antd';
-import PropTypes from 'prop-types';
 import styles from './style.less';
 
 function TitleModal({ visible, onCreate, onCancel, backData }) {
@@ -35,7 +34,7 @@ function TitleModal({ visible, onCreate, onCancel, backData }) {
   return (
     <Modal
       className={styles.modal_wrap}
-      visible={visible}
+      open={visible}
       title={'编辑标题'}
       okText="保存"
       cancelText="取消"
@@ -86,12 +85,5 @@ function TitleModal({ visible, onCreate, onCancel, backData }) {
     </Modal>
   );
 }
-
-TitleModal.propTypes = {
-  visible: PropTypes.bool.isRequired,
-  onCreate: PropTypes.func,
-  onCancel: PropTypes.func,
-  backData: PropTypes.object,
-};
 
 export default memo(TitleModal);

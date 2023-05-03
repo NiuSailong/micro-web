@@ -71,7 +71,7 @@ export default function SecondModel({
 
   return (
     <div>
-      <Drawer title="台账" placement="right" width="90%" onClose={onClose} visible={visible}>
+      <Drawer title="台账" placement="right" width="90%" onClose={onClose} open={visible}>
         <div className={styles.pSpace}>
           <Anput
             plantable={statusText === 'update' ? choil : []}

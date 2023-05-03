@@ -71,7 +71,7 @@ class Index extends TBasePage {
   /*确认是否是超级管理用户*/
   isroot = async () => {
     let params = {
-      loginToken: localStorage.dqtoken,
+      loginToken: localStorage.token,
     };
     let res = await isSuperAdmin(params);
     if (res?.statusCode === HttpCode.SUCCESS) {
@@ -652,7 +652,7 @@ class Index extends TBasePage {
           </div>
           <Modal
             closable={false}
-            visible={this.state.alertvisible}
+            open={this.state.alertvisible}
             onOk={this.alertvisibleOk}
             footer={null}
             width={500}

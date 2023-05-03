@@ -1,8 +1,8 @@
-const SERVER_URL_OBJ = {
-  release: 'https://api.gw-greenenergy.com', //线上
-  dev: 'https://api-dev.gw-greenenergy.com', //dev环境
+export const SERVER_URL_OBJ = {
+  release: 'https://api-pre.gw-greenenergy.com', //线上
+  dev: 'https://api-pre.gw-greenenergy.com', //dev环境
   pre: 'https://api-pre.gw-greenenergy.com', //预上线环境
-  test: 'https://api-test.gw-greenenergy.com', //测试环境
+  test: 'https://api-pre.gw-greenenergy.com', //测试环境
 };
 
 const MQTT_URL_OBJ = {
@@ -13,15 +13,9 @@ const MQTT_URL_OBJ = {
 };
 const { CLIENT_ENV } = process.env;
 
-const getCurrentUrl = () => {
-  // @ts-ignore
-  return SERVER_URL_OBJ[CLIENT_ENV] || SERVER_URL_OBJ.release;
-};
-
 const getCurrentMqttUrl = () => {
   // @ts-ignore
   return MQTT_URL_OBJ[CLIENT_ENV] || MQTT_URL_OBJ.release;
 };
 
-export const serverUrl = getCurrentUrl();
 export const mqttUrl = getCurrentMqttUrl();

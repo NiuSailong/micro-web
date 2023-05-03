@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import styles from './index.less';
 import { Icon, Button } from 'antd';
 
-import PropTypes from 'prop-types';
-
 export default class index extends Component {
   render() {
     const { message, type } = this.props;
@@ -79,8 +77,3 @@ export default class index extends Component {
     );
   }
 }
-index.propTypes = {
-  message: PropTypes.object,
-  type: PropTypes.string,
-  onCloseDetails: PropTypes.func,
-};

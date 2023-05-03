@@ -193,7 +193,7 @@ export default class TRTablePage extends TMainBasePage {
       <>
         <Drawer
           placement="right"
-          visible={drawerVisible}
+          open={drawerVisible}
           getContainer={false}
           width="90%"
           onClose={() => {
@@ -442,7 +442,7 @@ export default class TRTablePage extends TMainBasePage {
             closable
             onClose={this._handleClose}
             getContainer={false}
-            visible={batchAddVisible}
+            open={batchAddVisible}
             destroyOnClose
             data-drawer-batch
           >

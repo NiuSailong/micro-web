@@ -6,9 +6,7 @@ import { HttpCode } from '#/utils/contacts';
 import { undataPer, setPosition, getPositionListByDeptId } from '@/services/dataAnalysis';
 import style from './index.less';
 import moment from 'moment';
-import PropTypes from 'prop-types';
 import DeviceMap from '../DeviceMap/index.jsx';
-// import styles from '../../../components/style.less';
 import PanelTitle from '#/components/PanelTitle';
 import { data1, data2 } from './helper';
 import PositionUser from '../PositionUser';
@@ -379,7 +377,7 @@ const App = ({ visible, hidBtn, data, addAirId, type, dictionaryMap }) => {
       placement="right"
       closable={false}
       onClose={onClose}
-      visible={visible}
+      open={visible}
     >
       <Form {...layout} form={form} name="basic" labelAlign="right">
         <Form.Item name="id" hidden>
@@ -507,11 +505,4 @@ const App = ({ visible, hidBtn, data, addAirId, type, dictionaryMap }) => {
   );
 };
 
-App.propTypes = {
-  visible: PropTypes.bool,
-  hidBtn: PropTypes.func,
-  data: PropTypes.object,
-  addAirId: PropTypes.string || PropTypes.number,
-  type: PropTypes.string,
-};
 export default App;

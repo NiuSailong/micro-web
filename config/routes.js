@@ -10,7 +10,6 @@ export default [
         path: '/user/login',
         component: './User/login',
       },
-      { path: '/404', component: './404' },
     ],
   },
   {
@@ -46,8 +45,8 @@ export default [
       { path: '/LiveAccess', component: './LiveAccess', title: '现场数据接入配置' },
       { path: '/auxiliaryServiceConfiguration', component: './auxiliaryService', title: '辅助服务'},
       { path: '/DataDecisionSystem', component: './DataDecisionSystem', title: '数据决策系统' },
-      { path: '/404', component: './404' },
+      { path: '/*', component: '@/pages/404' },
     ],
   },
-  { path: '/404', component: './404' },
+  { path: '/*', component: '@/pages/404' },
 ];

@@ -75,7 +75,7 @@ export default function FirstModel({ visible, onClose, dataId, a, getData }) {
 
   return (
     <div>
-      <Drawer title="全部峰平谷" placement="right" width="90%" onClose={onClose} visible={visible}>
+      <Drawer title="全部峰平谷" placement="right" width="90%" onClose={onClose} open={visible}>
         <List
           loading={listLoading}
           itemLayout="horizontal"

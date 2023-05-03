@@ -29,7 +29,6 @@ import {
   getStoredEnergy,
   getCentralControl,
 } from '@/services/dataAnalysis';
-import PropTypes from 'prop-types';
 import styles from '@/pages/common/style.less';
 import style from './style.less';
 import moment from 'moment';
@@ -562,12 +561,5 @@ function Particulars({ data, handleClose, status, typeId, dispatch }) {
     </Spin>
   );
 }
-
-Particulars.propTypes = {
-  data: PropTypes.object,
-  handleClose: PropTypes.func,
-  status: PropTypes.string,
-  typeId: PropTypes.string,
-};
 
 export default connect()(Particulars);

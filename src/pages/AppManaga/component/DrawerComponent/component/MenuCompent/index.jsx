@@ -2,7 +2,6 @@ import { Fragment, forwardRef, useImperativeHandle } from 'react';
 import PanelTitle from '#/components/PanelTitle';
 import { getResManagaData } from '@/services/appManaga';
 import { useMount, useSetState } from 'ahooks';
-import PropTypes from 'prop-types';
 import { HttpCode } from '#/utils/contacts';
 import { Table, Input, Spin, Button, Form } from 'antd';
 import { RollbackOutlined, MinusCircleOutlined, PlusCircleOutlined } from '#/utils/antdIcons';
@@ -267,9 +266,4 @@ const MenuCompent = ({ detail, status, handleClose }, ref) => {
   );
 };
 
-MenuCompent.propTypes = {
-  detail: PropTypes.object,
-  status: PropTypes.string,
-  handleClose: PropTypes.func,
-};
 export default forwardRef(MenuCompent);

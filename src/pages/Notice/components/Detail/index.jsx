@@ -11,7 +11,6 @@ import { HttpCode } from '#/utils/contacts';
 import { getSiteType, getRecipient } from './components/helper';
 import { createNotice, updateNotice } from '@/services/notice';
 import NoticeSuccess from './components/Notice_success';
-import PropTypes from 'prop-types';
 import { Debounce } from '#/utils/utils';
 
 const { TabPane } = Tabs;
@@ -129,13 +128,5 @@ class NoticeDetail extends Component {
     );
   }
 }
-
-NoticeDetail.propTypes = {
-  onBackPress: PropTypes.func,
-  onAlertPress: PropTypes.func,
-  tempObj: PropTypes.object,
-  currentUser: PropTypes.object,
-  stateList: PropTypes.array,
-};
 
 export default NoticeDetail;

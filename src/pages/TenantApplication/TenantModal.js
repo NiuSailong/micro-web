@@ -654,7 +654,7 @@ const TenantModalComp = (props) => {
       centered
       closable
       maskClosable={false}
-      visible={visible}
+      open={visible}
       footer={_footerRender(current)}
       onCancel={_handleCancel}
       wrapClassName={styles.tenantmodalwrap}

@@ -11,9 +11,7 @@ import { HttpCode } from '#/utils/contacts';
 import TitleModal from './titleModal';
 import tAlert from '#/components/Alert';
 import titleArr from './helper';
-import PropTypes from 'prop-types';
 import styles from './style.less';
-import { UploadOutlined } from '#/utils/antdIcons';
 
 const CollectionCreateForm = ({ visible, onCreate, onCancel, backData, data }) => {
   const [formArr] = useState(() => {
@@ -35,7 +33,7 @@ const CollectionCreateForm = ({ visible, onCreate, onCancel, backData, data }) =
   return (
     <Modal
       className={styles.modal_wrap}
-      visible={visible}
+      open={visible}
       title={backData.dictionaryId === '' ? '添加' : '编辑'}
       okText="保存"
       cancelText="取消"
@@ -75,13 +73,6 @@ const CollectionCreateForm = ({ visible, onCreate, onCancel, backData, data }) =
       </Form>
     </Modal>
   );
-};
-
-CollectionCreateForm.propTypes = {
-  visible: PropTypes.bool.isRequired,
-  onCreate: PropTypes.func,
-  onCancel: PropTypes.func,
-  backData: PropTypes.object,
 };
 
 export default function Particulars({ data, handleClose, status }) {
@@ -308,9 +299,3 @@ export default function Particulars({ data, handleClose, status }) {
     </Spin>
   );
 }
-
-Particulars.propTypes = {
-  data: PropTypes.object,
-  handleClose: PropTypes.func,
-  status: PropTypes.string,
-};
