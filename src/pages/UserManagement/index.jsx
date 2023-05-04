@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './index.less';
 import { HttpCode, AlertResult } from '#/utils/contacts';
-import { Button, Select, Input, Drawer, Spin, Modal, Message } from 'antd';
+import { Button, Select, Input, Drawer, Spin, Modal, message } from 'antd';
 import { styleOption, getColumns } from './helper.js';
 import Table from './components/Table';
 import RedactAndLook from './RedactAndLook';
@@ -168,8 +168,8 @@ export default class index extends TBasePage {
     if (res && res.statusCode == HttpCode.SUCCESS) {
       this._getStauts();
 
-      Message.config({ top: '50%' });
-      Message.success(res.message);
+        message.config({ top: '50%' });
+        message.success(res.message);
     } else if (res && res.statusCode == '2601') {
       this.setState({ alertvisible: true });
     }
@@ -242,8 +242,8 @@ export default class index extends TBasePage {
     const { disabledBtns } = this.state;
 
     if (!disabledBtns.againIviteBtn) {
-      Message.config({ top: '50%' });
-      return Message.info('请联系管理员获取相关权限');
+        message.config({ top: '50%' });
+      return message.info('请联系管理员获取相关权限');
     }
     this.setState({ Ischecked: true });
   };
@@ -251,8 +251,8 @@ export default class index extends TBasePage {
     //查看页面停用
     const { disabledBtns } = this.state;
     if (!disabledBtns.blockupBtn) {
-      Message.config({ top: '50%' });
-      return Message.info('请联系管理员获取相关权限');
+        message.config({ top: '50%' });
+      return message.info('请联系管理员获取相关权限');
     }
     this.setState({ Ischecked: false });
   };
@@ -267,8 +267,8 @@ export default class index extends TBasePage {
         !disabledBtns.deleteBtn ||
         !disabledBtns.againIviteBtn
       ) {
-        Message.config({ top: '50%' });
-        return Message.info('请联系管理员获取相关权限');
+          message.config({ top: '50%' });
+        return message.info('请联系管理员获取相关权限');
       }
     }
 
@@ -301,8 +301,8 @@ export default class index extends TBasePage {
     //批量操作
     const { checkBoxText } = this.state;
     if (!item.isjurisdiction) {
-      Message.config({ top: '50%' });
-      return Message.info('请联系管理员获取相关权限');
+        message.config({ top: '50%' });
+      return message.info('请联系管理员获取相关权限');
     }
     let obj = await alert.show('确定执行此操作？');
 
