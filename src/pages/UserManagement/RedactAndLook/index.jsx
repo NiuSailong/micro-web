@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './index.less';
 import PanelTitle from '#/components/PanelTitle';
 import alert from '#/components/Alert';
-import { Button, Breadcrumb, Switch, Spin, Select, Input, Form, Message } from 'antd';
+import { Button, Breadcrumb, Switch, Spin, Select, Input, Form, message } from 'antd';
 import roleSettleModal from '../components/roleSettleModal';
 import { HttpCode, AlertResult } from '#/utils/contacts';
 import { queryRoleData, queryInfoById, queryChangeUser } from '@/services/usermanage';
@@ -148,8 +148,8 @@ class Index extends TBasePage {
 
     if (type === 'look') {
       if (!issubmitBtnLook) {
-        Message.config({ top: '50%' });
-        return Message.info('请联系管理员获取相关权限');
+        message.config({ top: '50%' });
+        return message.info('请联系管理员获取相关权限');
       }
       let arr = [];
       stationList.forEach((item) => arr.push(item.roleId));
@@ -167,17 +167,17 @@ class Index extends TBasePage {
       }).then((res) => {
         this.setState({ isLoading: false });
         if (res && res.statusCode == HttpCode.SUCCESS) {
-          Message.config({ top: '50%' });
-          Message.success('修改成功');
+            message.config({ top: '50%' });
+            message.success('修改成功');
           onCloseDetails();
         } else if (res.statusCode === '2316') {
-          Message.error(res.message);
+            message.error(res.message);
         }
       });
     } else {
       if (!issubmitBtnBianji) {
-        Message.config({ top: '50%' });
-        return Message.info('请联系管理员获取相关权限');
+          message.config({ top: '50%' });
+        return message.info('请联系管理员获取相关权限');
       }
       try {
         const values = await this.formRef.current.validateFields();
@@ -194,10 +194,10 @@ class Index extends TBasePage {
         }).then((res) => {
           this.setState({ isLoading: false });
           if (res && res.statusCode == HttpCode.SUCCESS) {
-            Message.success('修改成功');
+              message.success('修改成功');
             onCloseDetails();
           } else {
-            Message.error(res?.message || '修改失败');
+              message.error(res?.message || '修改失败');
           }
         });
       } catch (errorInfo) {

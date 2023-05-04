@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './index.less';
-import { Breadcrumb, Table, Input, Button, Popconfirm, Form, Select, Message, Modal } from 'antd';
+import { Breadcrumb, Table, Input, Button, Popconfirm, Form, Select, message, Modal } from 'antd';
 import { MinusCircleOutlined, CloseOutlined, PlusOutlined } from '#/utils/antdIcons';
 import PanelTitle from '#/components/PanelTitle';
 import { queryAddUser, queryRoleData } from '@/services/usermanage';
@@ -147,7 +147,7 @@ class Index extends TBasePage {
     let res = await queryAddUser({ addUserInfoBodyList: data });
     await this.setState({ res });
     if (res && res.statusCode === HttpCode.SUCCESS) {
-      Message.success('创建成功');
+        message.success('创建成功');
       this.props.onCloseDetails();
     } else if (res && res.statusCode === '2600') {
       if (JSON.stringify(res) !== '{}') {
@@ -196,8 +196,8 @@ class Index extends TBasePage {
     const { issubmitBtn } = this.state;
     //提交
     if (!issubmitBtn) {
-      Message.config({ top: '50%' });
-      return Message.info('请联系管理员获取相关权限');
+        message.config({ top: '50%' });
+      return message.info('请联系管理员获取相关权限');
     }
 
     try {

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styles from './index.less';
-import { Icon, Button } from 'antd';
+import { Button } from 'antd';
+import { ExclamationCircleOutlined } from '#/utils/antdIcons';
 
 export default class index extends Component {
   render() {
@@ -26,7 +27,7 @@ export default class index extends Component {
           {' '}
           <span style={{ color: '#F58D29', fontSize: '18px' }}>
             {' '}
-            <Icon type="exclamation-circle" />
+            <ExclamationCircleOutlined />
           </span>
           <span style={{ marginLeft: '10px', fontSize: '16px', fontWeight: 800, color: '#373e48' }}>
             {(newArr && newArr[0]) || '-'}

@@ -1,6 +1,6 @@
 import React from 'react';
 import TRTablePage from '@/pages/components/TRTablePage';
-import { Drawer, message, Divider, Tooltip, Button, Message } from 'antd';
+import { Drawer, message, Divider, Tooltip, Button } from 'antd';
 import { deleteServiceTeamBitch } from '@/services/appVersions';
 import DrawerHeader from '#/components/DrawerHeader';
 import tAlert from '#/components/Alert';
@@ -136,7 +136,7 @@ export default class index extends TRTablePage {
       const obj = await tAlert.show('确认删除此数据？');
       if (obj.index === 1) {
         const res = await deleteDicionary(row);
-        Message.success(res.message);
+        message.success(res.message);
         this._onFectDataList();
       }
     }
