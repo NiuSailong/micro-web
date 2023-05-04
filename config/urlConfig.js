@@ -1,8 +1,13 @@
 export const SERVER_URL_OBJ = {
-  release: 'https://api-pre.gw-greenenergy.com', //线上
-  dev: 'https://api-pre.gw-greenenergy.com', //dev环境
-  pre: 'https://api-pre.gw-greenenergy.com', //预上线环境
-  test: 'https://api-pre.gw-greenenergy.com', //测试环境
+  // release: 'https://api-pre.gw-greenenergy.com', //线上
+  // dev: 'https://api-pre.gw-greenenergy.com', //dev环境
+  // pre: 'https://api-pre.gw-greenenergy.com', //预上线环境
+  // test: 'https://api-pre.gw-greenenergy.com', //测试环境
+
+    dev: 'https://10.100.140.10:5001', // dev环境
+    test: 'https://10.100.140.10:5001', // 测试环境
+    pre: 'https://10.100.140.10:5001', // 预上线环境
+    release: 'https://10.100.140.10:5001', // 线上
 };
 
 const MQTT_URL_OBJ = {
