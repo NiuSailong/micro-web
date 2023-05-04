@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "configure",
+  "name": "trconfigure",
   "scripts": {
     "dev": "max dev",
     "format": "prettier --cache --write .",
