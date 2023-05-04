@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Icon, Menu, Layout } from 'antd';
+import { Menu, Layout } from 'antd';
 import { Link, history } from 'umi';
 import cls from 'classnames';
 import styles from './index.less';
@@ -9,8 +9,10 @@ const { Header, Content } = Layout;
 const { SubMenu } = Menu;
 
 const getIcon = (icon) => {
+    // TODO
   if (typeof icon === 'string') {
-    return <Icon type={icon} />;
+      return 1;
+      // return <Icon type={icon} />;
   }
   return icon;
 };
