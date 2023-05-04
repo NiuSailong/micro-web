@@ -1,7 +1,6 @@
 {
   "private": true,
   "name": "trconfigure",
-  "main": ".eslintrc.js",
   "scripts": {
     "dev": "max dev",
     "format": "prettier --cache --write .",
