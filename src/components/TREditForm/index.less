@@ -1,0 +1,28 @@
+.drawer {
+  width: 100%;
+  height: 100%;
+  padding: 24px 44px;
+  overflow: hidden auto;
+  :global {
+    .ant-btn {
+      margin-right: 8px;
+    }
+  }
+}
+.contractDropdown {
+  .contractDropdown_container {
+    padding: 16px !important;
+    &_label {
+      display: flex;
+      flex-direction: column;
+      max-height: 200px;
+      overflow: hidden;
+      overflow-y: auto;
+      :global {
+        .ant-checkbox-wrapper + .ant-checkbox-wrapper {
+          margin-left: 0 !important;
+        }
+      }
+    }
+  }
+}

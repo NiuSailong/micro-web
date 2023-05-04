@@ -1,0 +1,56 @@
+@import '~#/base/dark_var.less';
+
+.container {
+  width: 100%;
+}
+.header {
+  display: flex;
+  margin: 24px 24px 0;
+  .box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 68px;
+    padding: 0 32px;
+  }
+  .headerCascader {
+    height: 32px;
+    :global {
+      .ant-cascader-picker-label {
+        overflow: visible;
+        font-weight: 500;
+        font-size: 22px;
+        font-family: 'PingFang SC';
+        font-style: normal;
+      }
+      .ant-input.ant-cascader-input {
+        border: none;
+        box-shadow: none !important;
+      }
+      .ant-input:focus {
+        box-shadow: none !important;
+      }
+    }
+  }
+  .headerMenus {
+    :global {
+      .ant-cascader-menu-item .ant-cascader-menu-item-keyword {
+        color: #1e7ce8;
+      }
+    }
+  }
+  .suffixIcon {
+    color: #a09fa5 !important;
+    font-size: 16px;
+    transition: all 0.3s ease-out;
+  }
+}
+
+html[data-type-color='dark'] {
+  .container {
+    background-color: @background-color-base;
+  }
+  .box {
+    background-color: @component-background;
+  }
+}

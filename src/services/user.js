@@ -1,24 +1,24 @@
-import request from '#/utils/requestAbort';
+import request from '#/utils/request';
 
-export async function updateFeed(params) {
-  //验证码认证
-  return request('/user/feedback/updateFeedback', {
+// 大群人员基础信息
+export async function getPersonInfoByToken() {
+  return request('/user/person/getPersonInfoByToken', {
+    useCache: true,
+    validateCache: () => {
+      return true;
+    },
+    ttl: 60000,
+  });
+}
+
+export async function queryMenus(params) {
+  return request('/power/menu/menus', {
     method: 'POST',
     data: params,
+    useCache: true,
+    ttl: 60000,
+    validateCache: () => {
+      return true;
+    },
   });
-}
-
-export async function queryAllUser() {
-  return request('/power/position/all/user');
-}
-
-//获取公司下所有角色用户信息
-export async function getUserRolePerson() {
-  return request('/power/role/all/person', {
-    method: 'POST',
-  });
-}
-
-export async function queryDataPower(params) {
-  return request(`/power/dataPower/common/${params}`);
 }

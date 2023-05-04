@@ -1,8 +1,6 @@
-import React from 'react';
-// @ts-ignore
-import PageLoading from '@/components/PageLoading';
+import { Spin } from 'antd';
 function IndexPage() {
-  return <PageLoading />;
+  return <Spin />;
 }
 
 export default IndexPage;
