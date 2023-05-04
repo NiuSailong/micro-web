@@ -3,15 +3,6 @@ import { SERVER_URL_OBJ } from './urlConfig';
 const DQ_PROXY_ARRAY = [
     '/user',
     '/power',
-    '/dataPower',
-    '/sync-data-generation-side',
-    '/dictionary',
-    '/purchaseinfo-generation-side',
-    '/xiaoshouyi-config',
-    '/sync-data',
-    '/purchaseinfo',
-    '/task-client-center',
-    'task-client-center-generation-side'
 ];
 const { CLIENT_ENV } = process.env;
 

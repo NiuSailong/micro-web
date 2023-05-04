@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "trtianji",
+  "name": "trtitanic",
   "scripts": {
     "dev": "max dev",
     "format": "prettier --cache --write .",

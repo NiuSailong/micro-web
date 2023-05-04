@@ -18,11 +18,6 @@ export default [
     title: '业务页面',
     routes: [
       { path: '/', component: '@/pages/index' },
-        { path: '/TaskCenter', component: 'TaskCenter', title: '任务中心配置'},
-        { path: '/PowerStation', component: 'PowerStation', title: '电源侧场站配置'},
-        { path: '/SyncService', component: 'SyncService', title: '同步服务配置'},
-        { path: '/SD-TaskCenter', component: 'TaskCenter', title: '售电-任务中心配置'},
-        { path: '/SD-SyncService', component: 'SyncService', title: '售电-同步服务配置'},
       { path: '/*', component: '@/pages/404' },
     ],
   },
