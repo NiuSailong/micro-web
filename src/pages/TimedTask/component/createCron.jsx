@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Button, Modal } from 'antd';
-import QnnReactCron from 'qnn-react-cron';
+// import QnnReactCron from 'qnn-react-cron'; TODO
 
 export const CronChange = ({ label, onCreate }) => {
   let cronFns;
@@ -59,7 +59,7 @@ export default function CreateCron({ visible, onCreate, onCancel, cronData, stat
       onCancel={onCancel}
       footer={false}
     >
-      <CronChange label={cronData} onCreate={onCreate} />
+      {/*<CronChange label={cronData} onCreate={onCreate} />*/}
     </Modal>
   );
 }

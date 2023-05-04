@@ -36,7 +36,7 @@ export default defineConfig({
   inlineLimit: 3000,
   runtimePublicPath: {},
   mountElementId: `${packageName}`,
-  outputPath: `/${packageName}`,
+  outputPath: `./${packageName}`,
   manifest: {
     basePath: '/',
   },
