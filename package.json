@@ -9,10 +9,10 @@
     "postinstall": "max setup",
     "setup": "max setup",
     "start": "cross-env CLIENT_ENV=dev npm run dev",
-    "build": "cross-env CLIENT_ENV=release npm run build",
-    "buildtest": "cross-env CLIENT_ENV=test npm run build",
-    "buildpre": "cross-env CLIENT_ENV=pre npm run build",
-    "builddev": "cross-env CLIENT_ENV=dev npm run build"
+    "build": "cross-env CLIENT_ENV=release max build",
+    "buildtest": "cross-env CLIENT_ENV=test max build",
+    "buildpre": "cross-env CLIENT_ENV=pre max build",
+    "builddev": "cross-env CLIENT_ENV=dev max build"
   },
   "dependencies": {
     "@ant-design/icons": "4.7.0",
