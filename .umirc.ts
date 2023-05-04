@@ -30,9 +30,9 @@ export default defineConfig({
   ignoreMomentLocale: true,
   routes,
   proxy: DQ_PROXY,
-  base:  '/',
+  base: '/',
   hash: true,
-  publicPath: '/', //这里打包地址都要基于主应用的中注册的entry值
+  publicPath: IS_PRODUCTION ? `/saas/child/${packageName}/` : '/', //这里打包地址都要基于主应用的中注册的entry值
   inlineLimit: 3000,
   runtimePublicPath: {},
   mountElementId: `${packageName}`,
