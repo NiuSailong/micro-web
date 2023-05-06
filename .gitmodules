@@ -1,3 +1,0 @@
-[submodule "src/tool"]
-	path = src/tool
-	url = http://10.100.140.11:5000/xndc/front-tool-web.git

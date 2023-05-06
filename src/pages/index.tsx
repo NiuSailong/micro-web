@@ -1,6 +1,6 @@
-import { Spin } from 'antd';
-function IndexPage() {
-  return <Spin />;
+import { connectMaster } from 'umi';
+function Page(props = {}) {
+  return <div>{JSON.stringify(props)}</div>;
 }
 
-export default IndexPage;
+export default connectMaster(Page);

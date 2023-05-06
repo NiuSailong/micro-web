@@ -1,10 +1,4 @@
 import { defineConfig } from '@umijs/max';
-const packageName = require('./package.json').name;
-import routes from './config/routes.js';
-import DQ_PROXY from './config/proxy.js';
-
-const { TERMINAL_ENV, CLIENT_ENV, NODE_ENV } = process.env;
-const IS_PRODUCTION = NODE_ENV === 'production';
 
 export default defineConfig({
   qiankun: {
@@ -17,26 +11,24 @@ export default defineConfig({
     antd: true,
     baseNavigator: true,
   },
-  alias: {
-    "#": '/src/tool'
-  },
-  define:{
-    TERMINAL_ENV: TERMINAL_ENV||"SUB",
-    CLIENT_ENV: CLIENT_ENV,
-    'process.env': {
-      CLIENT_ENV: CLIENT_ENV,
-    },
-  },
+  alias: {},
+  define:{},
   ignoreMomentLocale: true,
-  routes,
-  proxy: DQ_PROXY,
+  routes: [
+    {
+      name: '权限', path: "/",
+      routes: [
+        { name: 'home', path: "/home", component: "@/pages/index" },
+      ],
+    },
+    { name: '404', path: '/*', component: '@/pages/404' },
+  ],
+  proxy: {},
   base: '/',
   hash: true,
-  publicPath: IS_PRODUCTION ? `/saas/child/${packageName}/` : '/', //这里打包地址都要基于主应用的中注册的entry值
+  publicPath: '/',
   inlineLimit: 3000,
   runtimePublicPath: {},
-  mountElementId: `${packageName}`,
-  outputPath: `./${packageName}`,
   manifest: {
     basePath: '/',
   },

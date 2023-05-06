@@ -1,7 +1,7 @@
 import React from 'react';
-import Empty from '#/components/Empty';
+import { Empty } from 'antd';
 
 // 但是还没发布，先来个简单的。
-const NoFoundPage = () => <Empty isBorder={false} />;
+const NoFoundPage = () => <Empty />;
 
 export default NoFoundPage;

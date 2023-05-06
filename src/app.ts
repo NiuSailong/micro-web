@@ -1,5 +1,3 @@
-import emitter from '#/utils/events';
-
 export const qiankun = {
   // 应用加载之前
   async bootstrap(props) {},
@@ -7,7 +5,7 @@ export const qiankun = {
   async mount(props) {
     props.onGlobalStateChange &&
     props.onGlobalStateChange((state, prev) => {
-      emitter.emit('onSignal', { ...state });
+      console.log(state)
     });
   },
   // 应用卸载之后触发
